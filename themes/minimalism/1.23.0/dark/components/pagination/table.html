@@ -1,0 +1,228 @@
+<section class="css-reference">
+  <h5>Pagination container</h5>
+  <p>Use a block-level element at the bottom of the table.</p>
+  <pre>
+    <style data-selector=".table-pagination"></style>
+  </pre>
+
+  <h5>Pagination item container</h5>
+  <p>Use a block-level element to wrap pagination items.</p>
+  <pre>
+    <style data-selector=".table-pagination .table-pagination-block"></style>
+  </pre>
+
+  <h5>Individual item container</h5>
+  <pre>
+    <style data-selector=".table-pagination .table-pagination-block > div">Leave a space between each feature</style>
+  </pre>
+  <pre>
+    <style data-selector=".table-pagination .table-pagination-block > div + div">More than one feature in a row</style>
+  </pre>
+  <pre data-title="Record feature block">
+    <style data-selector=".table-pagination .table-pagination-block .pagination-records"></style>
+  </pre>
+  <pre data-title="Dropdown feature block">
+    <style data-selector=".table-pagination .table-pagination-block .dropdown"></style>
+  </pre>
+  <pre data-title="Dropdown feature block after a Record feature block">
+    <style data-selector=".table-pagination .table-pagination-block .pagination-records + .dropdown"></style>
+  </pre>
+  <pre data-title="Input feature block">
+    <style data-selector=".table-pagination .table-pagination-block .pagination-input"></style>
+  </pre>
+
+  <h5>Button dropdown</h5>
+  <ul>
+    <li>Use the link style with the extra small button size.</li>
+    <li>Refer to the <a href="#/styles/{{theme}}/{{version}}/e5bd7778-d707-420b-ac64-4a55da161b83">Buttons</a> of the Style Portal for detailed guidelines.</li>
+  </ul>
+  <pre>
+    <style data-selector=".table-pagination .table-pagination-block .dropdown .btn"></style>
+  </pre>
+  <pre data-title=":hover">
+    <style data-selector=".table-pagination .table-pagination-block .dropdown .btn:hover"></style>
+  </pre>
+
+  <h5>Button dropdown menu</h5>
+  <pre>
+    <style data-selector=".table-pagination .table-pagination-block .dropdown .dropdown-menu"></style>
+  </pre>
+
+  <h5>User-specified page</h5>
+  <pre data-title="Input field">
+    <style data-selector=".table-pagination .table-pagination-block .pagination-input > input"></style>
+  </pre>
+
+  <h5>Prev/Next buttons</h5>
+  <pre>
+    <style data-selector=".table-pagination .table-pagination-block .pagination"></style>
+  </pre>
+</section>
+
+<section class="pagination-example">
+	<p>Always put pages numbers and navigation on the bottom right of the table.</p>
+	<p>Consider users' needs, data type, and layout of the content to decide which of the following features to include:</p>
+	<div class="lists-unordered">
+		<ul>
+			<li>Prev/Next page navigation</li>
+			<li>User-specified page switch</li>
+			<li>User-configurable maximum number of entries</li>
+			<li>Total number of hit/entries</li>
+		</ul>
+	</div>
+	<div class="table-pagination-showcase nomal">
+		<div class= "table-pagination">
+			<div class="table-pagination-block">
+				<div class="pagination-records">1-25 / 250</div>
+				<div class="dropdown open">
+			      <button class="btn btn-xs btn-link dropdown-toggle" type="button">
+			        <span class="tmicon tmicon-caret-down"></span>25 per page
+			      </button>
+			      <ul class="dropdown-menu dropdown-menu-multi-select">
+			        <li><a href="javascript:;">10</a></li>
+			        <li class="selected"><a href="javascript:;">25</a></li>
+			        <li><a href="javascript:;">50</a></li>
+			        <li><a href="javascript:;">100</a></li>
+			      </ul>
+			    </div>
+			    <div class="pagination-input"><input class="form-control" type="text" value="1"> / 10</div>
+			    <div>
+					<ul class="pagination">
+						<li>
+							<a href="javascript:;" aria-label="Previous">
+								<span class="tmicon tmicon-angle-left" aria-hidden="true"></span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" aria-label="Next">
+								<span class="tmicon tmicon-angle-right" aria-hidden="true"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="table-pagination-showcase">
+			<p>When there is no data to display, hide the number of entries. You may also disable the table pagination features. </p>
+		<div class= "table-pagination">
+			<div class="table-pagination-block">
+				<div class="dropdown">
+			      <button disabled class="btn btn-xs btn-link dropdown-toggle" type="button">
+			        <span class="tmicon tmicon-caret-down"></span>25 per page
+			      </button>
+			      <ul class="dropdown-menu dropdown-menu-multi-select">
+			        <li><a href="javascript:;">10</a></li>
+			        <li class="selected"><a href="javascript:;">25</a></li>
+			        <li><a href="javascript:;">50</a></li>
+			        <li><a href="javascript:;">100</a></li>
+			      </ul>
+			    </div>
+			    <div class="pagination-input disabled"><input class="form-control" type="text" value="1" disabled> / 10</div>
+			    <div>
+					<ul class="pagination">
+						<li class="disabled">
+							<a href="javascript:;" aria-label="Previous">
+								<span class="tmicon tmicon-angle-left" aria-hidden="true"></span>
+							</a>
+						</li>
+						<li class="disabled">
+							<a href="javascript:;" aria-label="Next">
+								<span class="tmicon tmicon-angle-right" aria-hidden="true"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="example">
+			<h5>Full</h5>
+			<div class= "table-pagination">
+				<div class="table-pagination-block">
+					<div class="pagination-records" >1-25 / 250</div>
+					<div class="dropdown">
+				      <button class="btn btn-xs btn-link dropdown-toggle" data-toggle="dropdown" type="button">
+				        <span class="tmicon tmicon-caret-down"></span>25 per page
+				      </button>
+				      <ul class="dropdown-menu dropdown-menu-multi-select">
+				        <li><a href="javascript:;">10</a></li>
+				        <li class="selected"><a href="javascript:;">25</a></li>
+				        <li><a href="javascript:;">50</a></li>
+				        <li><a href="javascript:;">100</a></li>
+				      </ul>
+				    </div>
+				    <div class="pagination-input"><input type="text" value="1" class="form-control"> / 10</div>
+				    <div>
+						<ul class="pagination">
+							<li>
+								<a href="javascript:;" aria-label="Previous">
+									<span class="tmicon tmicon-angle-left" aria-hidden="true"></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" aria-label="Next">
+									<span class="tmicon tmicon-angle-right" aria-hidden="true"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p></p>
+			<h5>Reduced</h5>
+			<div class= "table-pagination">
+				<div class="table-pagination-block">
+					<div class="pagination-records" >1-25 / 250</div>
+					<div class="dropdown">
+				      <button class="btn btn-xs btn-link dropdown-toggle" data-toggle="dropdown" type="button">
+				        <span class="tmicon tmicon-caret-down"></span>25 per page
+				      </button>
+				      <ul class="dropdown-menu dropdown-menu-multi-select">
+				        <li><a href="javascript:;">10</a></li>
+				        <li class="selected"><a href="javascript:;">25</a></li>
+				        <li><a href="javascript:;">50</a></li>
+				        <li><a href="javascript:;">100</a></li>
+				      </ul>
+				    </div>
+					 <div>
+						<ul class="pagination">
+							<li>
+								<a href="javascript:;" aria-label="Previous">
+									<span class="tmicon tmicon-angle-left" aria-hidden="true"></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" aria-label="Next">
+									<span class="tmicon tmicon-angle-right" aria-hidden="true"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p></p>
+			<h5>Minor</h5>
+			<div class= "table-pagination">
+				<div class="table-pagination-block">
+					<div class="pagination-records" >1-25 / 250</div>
+					<div>
+						<ul class="pagination">
+							<li>
+								<a href="javascript:;" aria-label="Previous">
+									<span class="tmicon tmicon-angle-left" aria-hidden="true"></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" aria-label="Next">
+									<span class="tmicon tmicon-angle-right" aria-hidden="true"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+</section>

@@ -1,0 +1,56 @@
+.label {
+  display: inline-block;
+  padding: 3px 6px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #ffffff;
+}
+a.label:hover,
+a.label:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+.btn .label {
+  position: relative;
+  top: -1px;
+}
+.label-blue {
+  background-color: #4cb5db;
+}
+.label-green {
+  background-color: #4cc383;
+}
+.label-cyan {
+  background-color: #45cce7;
+}
+.label-orange {
+  background-color: #fe9967;
+}
+.label-red {
+  background-color: #e56669;
+}
+.label-indigo {
+  background-color: #8a93e8;
+}
+.label-yellow {
+  background-color: #fcde78;
+  color: #666666;
+}
+.label-light-gray {
+  background-color: #e6e6e6;
+  color: #666666;
+}
+.label-gray {
+  background-color: #aaaaaa;
+}
+.label-dark {
+  background-color: #666666;
+}

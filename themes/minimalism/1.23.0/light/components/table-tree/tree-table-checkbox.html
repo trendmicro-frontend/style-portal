@@ -1,0 +1,253 @@
+<section class="css-reference">
+  <h5>Checkboxes after an expand button</h5>
+  <p>
+    For checkboxes after an expand button, apply the following style.
+  </p>
+  <pre>
+    <style data-selector=".table-tree .table-row-checkbox"></style>
+  </pre>
+
+  <h5>Icons after a checkboxe</h5>
+  <p>
+    For icons after a checkboxe, apply the following style.
+  </p>
+  <pre>
+    <style data-selector=".table-tree .table-row-checkbox ~ .tmicon"></style>
+  </pre>
+  <pre data-title="Folder icons">
+    <style data-selector=".table-tree .tmicon-color-folder"></style>
+  </pre>
+
+  <h5>Text after an icon and a checkbox</h5>
+  <p>
+    For text after an icon that is preceded with a checkbox, apply the following style.
+  </p>
+  <pre>
+    <style data-selector=".table-tree .table-row-checkbox + .tmicon + span"></style>
+  </pre>
+</section>
+
+<section>
+  <p class="help-block">
+    Note: The following example shows a sample with the file icons. Depending on the production requirements, file icons are optional.
+  </p>
+
+  <table class="table table-bordered table-hover table-tree table-selectable">
+    <thead>
+      <tr>
+        <th>Application Name</th>
+        <th style="width: 170px;">Product Version</th>
+        <th style="width: 170px;">Product Number</th>
+        <th style="width: 170px;">Product Language</th>
+        <th style="width: 140px;">Build</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="table-tree-row-exandable table-tree-row-lv-1 table-tree-row-expanded" data-level="1">
+        <td colspan="5">
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option1">
+            <label for="option1"></label>
+          </div>
+          <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+          <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+          <span>Asia</span>
+        </td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-2 table-tree-row-expanded" data-level="2">
+        <td colspan="5">
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option2">
+            <label for="option2"></label>
+          </div>
+          <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+          <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+          <span>TPE</span>
+        </td>
+      </tr>
+
+      <tr class="table-tree-row-lv-3" data-level="3">
+        <td>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option3">
+            <label for="option3"></label>
+          </div>
+          <span class="tmicon tmicon-file-text"></span>
+          <span>DDEI_1</span>
+        </td>
+        <td>2.5</td>
+        <td>4924</td>
+        <td>English</td>
+        <td>01</td>
+      </tr>
+
+      <tr class="table-tree-row-lv-3" data-level="3">
+        <td>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option4">
+            <label for="option4"></label>
+          </div>
+          <span class="tmicon tmicon-file-text"></span>
+          <span>DDEI_2</span>
+        </td>
+        <td>2.5</td>
+        <td>4924</td>
+        <td>English</td>
+        <td>01</td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-2 table-tree-row-expanded" data-level="2">
+        <td colspan="5">
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option12">
+            <label for="option12"></label>
+          </div>
+          <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+          <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+          <span>KHH</span>
+        </td>
+      </tr>
+
+      <tr class="table-tree-row-lv-3" data-level="3">
+        <td>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option13">
+            <label for="option13"></label>
+          </div>
+          <span class="tmicon tmicon-file-text"></span>
+          <span>DDEI_1</span>
+        </td>
+        <td>2.5</td>
+        <td>4924</td>
+        <td>English</td>
+        <td>01</td>
+      </tr>
+
+      <tr class="table-tree-row-lv-3" data-level="3">
+        <td>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option14">
+            <label for="option14"></label>
+          </div>
+          <span class="tmicon tmicon-file-text"></span>
+          <span>DDEI_2</span>
+        </td>
+        <td>2.5</td>
+        <td>4924</td>
+        <td>English</td>
+        <td>01</td>
+      </tr>
+
+      <tr class="table-tree-row-lv-1" data-level="1">
+        <td colspan="5">
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option5">
+            <label for="option5"></label>
+          </div>
+          <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+          <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+          <span>JP</span>
+        </td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-1" data-level="1">
+        <td colspan="5">
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option6">
+            <label for="option6"></label>
+          </div>
+          <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+          <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+          <span>Europe</span>
+        </td>
+      </tr>
+
+      <tr class="table-tree-row-lv-2" data-level="2">
+        <td>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option7">
+            <label for="option7"></label>
+          </div>
+          <span class="tmicon tmicon-file-text"></span>
+          <span>DDEI_1</span>
+        </td>
+        <td>2.5</td>
+        <td>4924</td>
+        <td>English</td>
+        <td>01</td>
+      </tr>
+
+      <tr class="table-tree-row-lv-2" data-level="2">
+        <td>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option8">
+            <label for="option8"></label>
+          </div>
+          <span class="tmicon tmicon-file-text"></span>
+          <span>DDEI_2</span>
+        </td>
+        <td>2.5</td>
+        <td>4924</td>
+        <td>English</td>
+        <td>01</td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-1" data-level="1">
+        <td colspan="5">
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option9">
+            <label for="option9"></label>
+          </div>
+          <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+          <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+          <span>USA</span>
+        </td>
+      </tr><tr class="table-tree-row-lv-2" data-level="2">
+        <td>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option10">
+            <label for="option10"></label>
+          </div>
+          <span class="tmicon tmicon-file-text"></span>
+          <span>DDEI_1</span>
+        </td>
+        <td>2.5</td>
+        <td>4924</td>
+        <td>English</td>
+        <td>01</td>
+      </tr>
+
+      <tr class="table-tree-row-lv-2" data-level="2">
+        <td>
+          <div class="form-check table-row-checkbox">
+            <input type="checkbox" id="option11">
+            <label for="option11"></label>
+          </div>
+          <span class="tmicon tmicon-file-text"></span>
+          <span>DDEI_2</span>
+        </td>
+        <td>2.5</td>
+        <td>4924</td>
+        <td>English</td>
+        <td>01</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

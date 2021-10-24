@@ -1,0 +1,362 @@
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+  margin-bottom: 24px;
+}
+legend {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #bbbbbb;
+  border-bottom: 1px solid #555555;
+  padding-bottom: 4px;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 4px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.input-focus {
+  border-color: #33abd6;
+  transition: border-color 0.2s linear 0s;
+  outline: none;
+}
+input[type="file"] {
+  display: none;
+}
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+output {
+  display: block;
+  padding-top: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #bbbbbb;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 5px 12px;
+  font-size: 13px;
+  color: #bbbbbb;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #888888;
+  border-radius: 3px;
+}
+.form-control::-moz-placeholder {
+  color: #888888;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #888888;
+}
+.form-control::-webkit-input-placeholder {
+  color: #888888;
+}
+select.form-control {
+  height: 32px;
+  appearance: none;
+  background: url("../images/icon/selectCaretDown.svg") no-repeat;
+  background-position: right 12px center;
+}
+select.form-control option {
+  background-color: #2c2c2c;
+}
+select[multiple].form-control {
+  height: auto;
+  background-image: none;
+  background-color: #2c2c2c;
+}
+select:focus.form-control {
+  outline: 0;
+}
+.form-control::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #555555;
+  opacity: 0.4;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+textarea.form-control {
+  height: auto;
+  resize: none;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  input.form-control {
+    height: 32px;
+  }
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"].form-control,
+  input[type="time"].form-control,
+  input[type="datetime-local"].form-control,
+  input[type="month"].form-control {
+    line-height: 32px;
+  }
+  input[type="date"].input-sm,
+  input[type="time"].input-sm,
+  input[type="datetime-local"].input-sm,
+  input[type="month"].input-sm,
+  .input-group-sm input[type="date"],
+  .input-group-sm input[type="time"],
+  .input-group-sm input[type="datetime-local"],
+  .input-group-sm input[type="month"] {
+    line-height: 28px;
+  }
+  input[type="date"].input-lg,
+  input[type="time"].input-lg,
+  input[type="datetime-local"].input-lg,
+  input[type="month"].input-lg,
+  .input-group-lg input[type="date"],
+  .input-group-lg input[type="time"],
+  .input-group-lg input[type="datetime-local"],
+  .input-group-lg input[type="month"] {
+    line-height: 44px;
+  }
+}
+.form-group {
+  margin-bottom: 12px;
+}
+.form-group .tmicon-info-o {
+  margin-top: 6px;
+}
+.form-group .popover-example.bottom-right {
+  margin-top: 8px;
+}
+form .tmicon-info-o {
+  margin-left: 12px;
+}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"].disabled,
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"] {
+  cursor: not-allowed;
+}
+.form-check {
+  position: relative;
+  display: block;
+}
+.form-check input[type="radio"],
+.form-check .input-radio,
+.form-check input[type="checkbox"],
+.form-check .input-checkbox {
+  display: none;
+}
+.form-check input[type="radio"] + label,
+.form-check .input-radio + label,
+.form-check input[type="checkbox"] + label,
+.form-check .input-checkbox + label {
+  min-height: 20px;
+  padding: 0 0 0 22px;
+  margin-bottom: 0;
+  cursor: pointer;
+  color: #bbbbbb;
+  line-height: 20px;
+  position: relative;
+}
+.form-check input[type="radio"] + label:before,
+.form-check .input-radio + label:before,
+.form-check input[type="checkbox"] + label:before,
+.form-check .input-checkbox + label:before,
+.form-check input[type="radio"] + label:after,
+.form-check .input-radio + label:after,
+.form-check input[type="checkbox"] + label:after,
+.form-check .input-checkbox + label:after {
+  content: "";
+  display: inline-block;
+}
+.form-check input[type="radio"] + label:before,
+.form-check .input-radio + label:before,
+.form-check input[type="checkbox"] + label:before,
+.form-check .input-checkbox + label:before {
+  width: 14px;
+  height: 14px;
+  margin-left: -22px;
+  margin-top: 3px;
+  margin-right: 8px;
+  vertical-align: top;
+  border: 1px solid #bbbbbb;
+  background-color: transparent;
+  background-position: center;
+}
+.form-check input[type="radio"] + label:hover:before,
+.form-check .input-radio + label:hover:before,
+.form-check input[type="checkbox"] + label:hover:before,
+.form-check .input-checkbox + label:hover:before,
+.form-check input[type="radio"] + label.hover:before,
+.form-check .input-radio + label.hover:before,
+.form-check input[type="checkbox"] + label.hover:before,
+.form-check .input-checkbox + label.hover:before {
+  border: 1px solid #33abd6;
+}
+.form-check input[type="radio"]:disabled + label:before,
+.form-check .input-radio:disabled + label:before,
+.form-check input[type="checkbox"]:disabled + label:before,
+.form-check .input-checkbox:disabled + label:before {
+  border: 1px solid #666666;
+  background-color: #555555;
+}
+.form-check input[type="radio"]:checked + label:hover:before,
+.form-check .input-radio:checked + label:hover:before,
+.form-check input[type="checkbox"]:checked + label:hover:before,
+.form-check .input-checkbox:checked + label:hover:before,
+.form-check input[type="radio"]:checked + label.hover:before,
+.form-check .input-radio:checked + label.hover:before,
+.form-check input[type="checkbox"]:checked + label.hover:before,
+.form-check .input-checkbox:checked + label.hover:before {
+  border: 1px solid #33abd6;
+  background-color: #33abd6;
+}
+.form-check input[type="radio"]:checked + label:before,
+.form-check .input-radio:checked + label:before,
+.form-check input[type="checkbox"]:checked + label:before,
+.form-check .input-checkbox:checked + label:before,
+.form-check input[type="radio"]:checked:disabled + label:before,
+.form-check .input-radio:checked:disabled + label:before,
+.form-check input[type="checkbox"]:checked:disabled + label:before,
+.form-check .input-checkbox:checked:disabled + label:before {
+  border: 1px solid #0382b0;
+  background-color: #0382b0;
+  transition: background-color 0.2s;
+}
+.form-check input[type="radio"] + label:before,
+.form-check .input-radio + label:before,
+.form-check input[type="radio"] + label:after,
+.form-check .input-radio + label:after {
+  border-radius: 50%;
+}
+.form-check input[type="radio"]:checked + label:after,
+.form-check .input-radio:checked + label:after {
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+.form-check input[type="checkbox"] + label:before,
+.form-check .input-checkbox + label:before {
+  border-radius: 2px;
+}
+.form-check input[type="checkbox"]:checked + label:before,
+.form-check .input-checkbox:checked + label:before {
+  background-image: url(../images/icon/component_check.svg);
+  background-position: center;
+  background-size: contain;
+}
+.form-check .checkbox-partial + label:before {
+  border-color: #bbbbbb;
+}
+.form-check .checkbox-partial + label:after {
+  background-color: #33abd6;
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 7px;
+  transition: background-color 0.2s;
+}
+.form-check .checkbox-partial:checked + label:after {
+  content: none;
+}
+.form-check + .form-check {
+  margin-top: 8px;
+}
+.form-check-disabled-label,
+.form-check input[type="radio"]:disabled + label,
+.form-check .input-radio:disabled + label,
+.form-check input[type="checkbox"]:disabled + label,
+.form-check .input-checkbox:disabled + label,
+.form-check.disabled label,
+fieldset[disabled] .form-check label {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  cursor: not-allowed;
+}
+.form-check-inline {
+  vertical-align: middle;
+  float: left;
+}
+.form-check-inline + .form-check-inline {
+  margin-left: 16px;
+  margin-top: 0px;
+}
+.input-focus {
+  border-color: #33abd6;
+}
+.form-invalid,
+.form-invalid:focus {
+  border-color: #db3d44;
+}
+.label-required:after {
+  content: "*";
+  color: #db3d44;
+}
+textarea.textarea-resizable {
+  resize: vertical;
+}
+.form-control-static {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  min-height: 32px;
+}
+.form-control-static.input-lg,
+.form-control-static.input-sm {
+  padding-left: 0;
+  padding-right: 0;
+}
+.help-block {
+  display: block;
+  margin-top: 4px;
+  color: #888888;
+}
+.help-block.help-block-with-icon {
+  padding-left: 20px;
+}
+.help-block .tmicon {
+  margin-right: 4px;
+  vertical-align: top;
+  margin-top: 0;
+  margin-left: -20px;
+}
+.help-block-invalid {
+  color: #db3d44;
+}

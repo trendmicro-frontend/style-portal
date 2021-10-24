@@ -1,0 +1,202 @@
+<section class="css-reference">
+  <h5>Icons</h5>
+  <pre>
+    <style data-selector=".tree-node-label > .tmicon"></style>
+  </pre>
+  <pre data-title="Folder icons">
+    <style data-selector=".table-tree .tmicon-color-folder"></style>
+  </pre>
+</section>
+
+<section>
+  <p>You can include an icon for each node in the tree view. The tree node icon should always be placed on the left of the node label.</p>
+
+  <p class="help-block">
+    Note: In the following example, use folder icons for the container nodes and device icons for the leaf nodes to represent a managed file system hierarchy.
+  </p>
+
+  <div class="tree" style="width: 320px;" role="tree">
+    <div class="tree-nodes tree-nodes-level-1" role="group">
+      <div class="tree-node tree-node-expandable tree-node-expanded" data-level="1">
+        <div class="tree-node-label">
+          <button class="tree-node-expand-button">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+          </button>
+
+          <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+          <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+
+          <span class="tree-node-text">Group 1</span>
+        </div>
+
+        <div class="tree-nodes tree-nodes-level-2" role="group">
+          <div class="tree-node tree-node-expandable tree-node-expanded" data-level="2">
+            <div class="tree-node-label">
+              <button class="tree-node-expand-button">
+                <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+              </button>
+
+              <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+              <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+
+              <span class="tree-node-text">Asia</span>
+            </div>
+
+            <div class="tree-nodes tree-nodes-level-3" role="group">
+              <div class="tree-node tree-node-expandable tree-node-expanded" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                  </button>
+
+                  <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+                  <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+
+                  <span class="tree-node-text">Taiwan</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tmicon tmicon-device"></span>
+                      <span class="tree-node-text">DDI-Taipei</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tmicon tmicon-device"></span>
+                      <span class="tree-node-text">DDI-Taichung</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tmicon tmicon-server"></span>
+                      <span class="tree-node-text">Repo-Kaohsiung</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                  </button>
+
+                  <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+                  <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+
+                  <span class="tree-node-text">Janpan</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tmicon tmicon-device"></span>
+                      <span class="tree-node-text">DDI-Tokyo</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tmicon tmicon-device"></span>
+                      <span class="tree-node-text">DDI-Okinawa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node" data-level="3">
+                <div class="tree-node-label">
+                  <span class="tmicon tmicon-device-master"></span>
+                  <span class="tree-node-text">Master01-Singapore</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree-node tree-node-expandable" data-level="2">
+            <div class="tree-node-label">
+              <button class="tree-node-expand-button">
+                <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+              </button>
+
+              <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+              <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+
+              <span class="tree-node-text">Europe</span>
+            </div>
+
+            <div class="tree-nodes tree-nodes-level-3" role="group">
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                  </button>
+
+                  <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+                  <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+
+                  <span class="tree-node-text">Germany</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tmicon tmicon-device"></span>
+                      <span class="tree-node-text">DDI-Berlin</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tmicon tmicon-device"></span>
+                      <span class="tree-node-text">DDI-Munich</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                  </button>
+
+                  <span class="tmicon tmicon-folder tmicon-color-folder"></span>
+                  <span class="tmicon tmicon-folder-open tmicon-color-folder"></span>
+
+                  <span class="tree-node-text">Spain</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tmicon tmicon-device"></span>
+                      <span class="tree-node-text">DDI-Madrid</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node" data-level="3">
+                <div class="tree-node-label">
+                  <span class="tmicon tmicon-device"></span>
+                  <span class="tree-node-text">DDI-Italy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-node" data-level="1">
+        <div class="tree-node-label">
+          <span class="tree-node-text">Group 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

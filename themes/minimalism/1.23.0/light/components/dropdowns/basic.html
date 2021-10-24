@@ -1,0 +1,40 @@
+<section class="css-reference">
+  <h5>Drop-down menu</h5>
+  <p>Wrap the drop-down menu items within a <code data-tag="ul"></code> element. E.g. <code>.dropdown-menu</code></p>
+  <pre>
+    <style data-selector=".dropdown-menu"></style>
+  </pre>
+  <pre data-title="When dropdown is active">
+    <style data-selector=".open > .dropdown-menu"></style>
+  </pre>
+  <pre data-title="Align the menu to the right">
+    <style data-selector=".dropdown-menu-right"></style>
+  </pre>
+
+  <h5>Drop-down menu items</h5>
+  <p>Use <code data-tag="a"></code> options under <code data-tag="li"></code> elements.</p>
+  <pre data-title="Links within the dropdown menu">
+    <style data-selector=".dropdown-menu > li > a"></style>
+  </pre>
+  <pre data-title=":hover, :focus">
+    <style data-selector=".dropdown-menu > li > a:hover"></style>
+  </pre>
+</section>
+
+<section class="dropdown-example">
+  <p>Drop-down menus are used to provide a list of options for the user. Use sentence case for menu options.</p>
+  <p>
+    <div class="dropdown open">
+      <button class="btn btn-border dropdown-toggle" type="button">
+        <span class="tmicon tmicon-caret-down"></span>Select an option
+      </button>
+
+      <ul class="dropdown-menu">
+        <li><a href="javascript:;">Menu item one</a></li>
+        <li><a href="javascript:;">Menu item two</a></li>
+        <li><a href="javascript:;">Menu item three</a></li>
+        <li><a href="javascript:;">Menu item four</a></li>
+      </ul>
+    </div>
+  </p>
+</section>

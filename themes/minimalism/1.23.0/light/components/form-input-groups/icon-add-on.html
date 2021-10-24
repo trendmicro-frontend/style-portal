@@ -1,0 +1,45 @@
+<section class="css-reference">
+  <h5>Input icon group container</h5>
+  <p>Create the container class, and wrap the input and the icon with a <code data-tag="div"></code> element. For example, <code>.input-icon-group</code> is used in Bootstrap.</p>
+  <pre>
+    <style data-selector=".input-icon-group"></style>
+  </pre>
+
+  <h5>Input with form controls</h5>
+  <p>For details on styles and statuses of inputs, refer to <a href="#/styles/{{theme}}/{{version}}/206355af-1c26-49d7-b878-d3d6f094990f">Form Elements.</a></p>
+  <pre>
+    <style data-selector=".input-icon-group > .form-control"></style>
+  </pre>
+  <h5>Icon wrapper</h5>
+  <pre data-title="For font-awesome icon wrapper:">
+    <style data-selector=".input-icon-label">Wrap i into a label element.</style>
+  </pre>
+  <h5>Icon</h5>
+  <p>The icon should only be used on elements that do not contain any text or child elements. We recommend wrapping any <code data-tag="span"></code>, <code data-tag="i"></code> element.</p>
+  <pre data-title=":focus">
+    <style data-selector=".input-icon-group > .form-control:focus + .input-icon-label > i"></style>
+  </pre>
+</section>
+
+<section class="form-input-groups-example">
+  <p>You can add icons into a search box and have the icon highlighted when the input is focused.</p>
+
+	<div class="input-icon-group">
+      <input id="filter" type="text" class="form-control" placeholder="Case name">
+      <label class="input-icon-label" for="filter">
+        <i class="tmicon tmicon-search-o"></i>
+      </label>
+  </div>
+  <div class="input-icon-group">
+      <input id="filter1" type="text" class="form-control input-focus" value="DDEI">
+      <label class="input-icon-label" for="filter1">
+        <i class="tmicon tmicon-search-o focus"></i>
+      </label>
+  </div>
+  <div class="input-icon-group">
+      <input id="filter2" type="text" class="form-control" value="2016-08-30" placeholder="YYYY-MM-DD">
+      <label class="input-icon-label" for="filter2">
+        <i class="tmicon tmicon-calendar"></i>
+      </label>
+  </div>
+</section>

@@ -1,0 +1,8 @@
+.JCLRgrip {
+    margin-left: -1px !important;
+}
+@-moz-document url-prefix() { 
+	.JCLRgrip {
+		margin-left: -2px !important;
+	}
+}

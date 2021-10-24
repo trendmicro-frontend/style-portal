@@ -1,0 +1,55 @@
+.colors-palette-container {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display:         inline-flex;
+  width: 100%;
+  padding: 0 32px;
+  margin-bottom: 20px;
+          flex-direction: row;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.colors-palette-container:last-child {
+  margin-bottom: 0;
+}
+.colors-palette-container .palette-title {
+  display: inline-block;
+  margin: 0;
+  font-family: "Interstate-Light", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 40px;
+}
+.colors-palette-container .colors-palette {
+  width: 100%;
+  margin-left: 56px;
+}
+.colors-palette-container .colors-palette:first-child {
+  margin-left: 0;
+}
+.colors-palette-container ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+.colors-palette-container ul li {
+  height: 48px;
+  padding: 0 16px;
+  margin-top: 1px;
+  line-height: 48px;
+}
+.colors-palette-container ul li:first-child {
+  margin-top: 0;
+}
+.colors-palette-container ul li .color-code {
+  float: right;
+  cursor: pointer;
+}

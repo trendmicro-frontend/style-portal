@@ -1,0 +1,27 @@
+<section class="css-reference">
+  <h5>Disabled drop-down menu items</h5>
+  <pre data-title="Disabled links">
+    <style data-selector=".dropdown-menu > .disabled > a"></style>
+  </pre>
+  <pre data-title=":hover, :focus">
+    <style data-selector=".dropdown-menu > .disabled > a:hover"></style>
+  </pre>
+</section>
+
+<section class="dropdown-example">
+  <p>A disabled menu item should not allow user configurations.</p>
+  <p>
+    <div class="dropdown open">
+      <button class="btn btn-border dropdown-toggle" type="button">
+        <span class="tmicon tmicon-caret-down"></span>Select an option
+      </button>
+
+      <ul class="dropdown-menu">
+        <li><a href="javascript:;">Menu item one</a></li>
+        <li class="disabled"><a href="javascript:;">Menu item two</a></li>
+        <li><a href="javascript:;">Menu item three</a></li>
+        <li><a href="javascript:;">Menu item four</a></li>
+      </ul>
+    </div>
+  </p>
+</section>

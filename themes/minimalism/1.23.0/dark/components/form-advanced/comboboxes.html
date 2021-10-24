@@ -1,0 +1,64 @@
+<section class="css-reference">
+  <h5>Combo box container</h5>
+  <p>Wrap the input, icon, and drop-down menu with a <code data-tag="div"></code> element.</p>
+  <pre>
+    <style data-selector=".input-icon-group"></style>
+  </pre>
+  <pre data-title=":after for arrow style">
+    <style data-selector=".combobox:after"></style>
+  </pre>
+
+  <h5>Input with from control</h5>
+  <pre>
+    <style data-selector=".combobox .form-control"></style>
+  </pre>
+
+  <h5>Drop-down menu</h5>
+  <p>For details about drop-down menus, refer to <a href="#/styles/{{theme}}/{{version}}/c30559fc-1076-4d01-a05a-ea5ef0b20f69">Drop-down Menus</a>.</p>
+  <pre data-title="Drop-down menu style for combo box">
+    <style data-selector=".combobox .dropdown-menu"></style>
+  </pre>
+  <h5>Drop-down menu items</h5>
+  <pre>
+    <style data-selector=".combobox .dropdown-menu > li"></style>
+  </pre>
+  <pre data-title=":hover">
+    <style data-selector=".combobox .dropdown-menu > li:hover"></style>
+  </pre>
+  <pre data-title="Selected item">
+    <style data-selector=".combobox .dropdown-menu > li.actived"></style>
+  </pre>
+
+  <pre data-title="No matches list item">
+    <style data-selector=".combobox .dropdown-menu .no-matches"></style>
+  </pre>
+  <pre data-title=":hover of no matches list item">
+    <style data-selector=".combobox .dropdown-menu .no-matches:hover"></style>
+  </pre>
+
+  <h5>Cancel icon class</h5>
+  <p>The icon class should only be used on elements that do not contain any text or child elements. We recommend wrapping any <code data-tag="span"></code> or <code data-tag="i"></code> element.</p>
+  <pre data-title="Icon color and position">
+    <style data-selector=".tmicon-visible-low"></style>
+    <style data-selector=".input-icon-group .tmicon-close-s"></style>
+  </pre>
+  <pre>
+    <style data-selector=".combobox .tmicon-close-s"></style>
+  </pre>
+  <pre data-title=":hover">
+    <style data-selector=".tmicon-visible-low.tmicon-hoverable:hover"></style>
+  </pre>
+</section>
+
+<section class="form-advanced-example">
+  <p>A combo box allows the user to type in a single-line input to limit the search, and select an item from a list of matched options. We recommend using a combo box when you have a list that contains more than 13 items. In case when the list contains less than 13 items, use a drop-down menu.</p>
+
+	<select id="combobox" class="input-width-default">
+      <option>France</option>
+      <option>Germany</option>
+      <option>Syria</option>
+      <option>Tahiti</option>
+      <option>Taiwan</option>
+      <option>Tajikistan</option>
+  </select>
+</section>

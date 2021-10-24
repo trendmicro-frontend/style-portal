@@ -1,0 +1,98 @@
+<section class="css-reference">
+  <h5>Custom range wrapper</h5>
+  <p>Wrap the dropdown menu and calender container.</p>
+  <pre>
+    <style data-selector=".date-time-picker-example .custom-wrapper"></style>
+  </pre>
+  <pre data-title="When dropdown is active">
+    <style data-selector=".date-time-picker-example .dropdown.open > .custom-wrapper"></style>
+  </pre>
+
+  <h5>Dropdown menu</h5>
+  <p>Extend dropdown menu style, please refer to <a href="#/styles/{{theme}}/{{version}}/c30559fc-1076-4d01-a05a-ea5ef0b20f69">Drop-downs</a>.</p>
+  <pre>
+    <style data-selector=".date-time-picker-example .custom-wrapper > ul.dropdown-menu"></style>
+  </pre>
+  <pre data-title="When dropdown is open">
+    <style data-selector=".date-time-picker-example .dropdown.open > .custom-wrapper > ul.dropdown-menu"></style>
+  </pre>
+
+  <h5>Calender container</h5>
+  <p>Wrap the simple date time, start/end datepicker, buttons.</p>
+  <pre>
+    <style data-selector=".date-time-picker-example .custom-wrapper .date-picker-pane"></style>
+  </pre>
+  <pre data-title="For the tilde">
+    <style data-selector=".date-time-picker-example .custom-wrapper .date-picker-pane .date-picker-pane-header .tilde"></style>
+  </pre>
+
+  <h5>Datepicker wrapper</h5>
+  <pre>
+    <style data-selector=".date-time-picker-example .custom-wrapper .date-picker-pane .date-picker-pane-body">Leave space between start/end datepicker and simple date time</style>
+  </pre>
+
+  <h5>Datepicker attached to wrapper</h5>
+  <p>A datepicker attached to wrapper can created with a block-level element.</p>
+
+  <h5>Datepicker container</h5>
+  <pre>
+    <style data-selector=".date-time-picker-example .custom-wrapper .date-picker-pane .date-picker-pane-body .date-picker-pane-container"></style>
+  </pre>
+  <pre>
+    <style data-selector=".date-time-picker-example .custom-wrapper .date-picker-pane .date-picker-pane-body .date-picker-pane-container + .date-picker-pane-container">Leave space between containers</style>
+  </pre>
+  <pre data-title="Vertical line between containers">
+    <style data-selector=".date-time-picker-example .custom-wrapper .date-picker-pane .date-picker-pane-body .date-picker-pane-container + .date-picker-pane-container:before">::before</style>
+  </pre>
+  <pre data-title="For datepicker table">
+    <style data-selector=".date-time-picker-example .custom-wrapper .date-picker-pane .date-picker-pane-body .date-picker-pane-container .datepicker table"></style>
+  </pre>
+  <pre data-title="For datepicker-months, datepicker-years table">
+    <style data-selector=".date-time-picker-example .custom-wrapper .date-picker-pane .date-picker-pane-body .date-picker-pane-container .datepicker div.datepicker-months table"></style>
+  </pre>
+
+  <h5>Button container</h5>
+  <pre>
+    <style data-selector=".date-time-picker-example .custom-wrapper .date-picker-pane .date-picker-pane-footer">Leave space between button and datepicker wrapper</style>
+  </pre>
+</section>
+
+<section class="date-time-picker-example">
+  <p>When the user specifies a date range using date and time pickers from two calendars. The calendar pane can be opened on the left or the right, dpending on the available space.</p>
+  <p>For detailed information, see <a href="https://wiki.jarvis.trendmicro.com/pages/viewpage.action?pageId=261109313#Date/TimePicker-Date/TimeRangePicker" target="_blank">Date/Time Range Picker</a>.</p>
+  <div id="date-time-range-dropdown" class="dropdown time-range-wrapper open">
+    <button class="btn btn-border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+      <span class="tmicon tmicon-caret-down"></span><span id="date-time-range-text">Last 30 days</span>
+    </button>
+
+    <div class="custom-wrapper">
+      <ul class="dropdown-menu">
+        <li><a class="predefine-range" href="javascript:;">Last 24 hours</a></li>
+        <li><a class="predefine-range" href="javascript:;">Last 7 days</a></li>
+        <li><a class="predefine-range" href="javascript:;">Last 30 days</a></li>
+        <li><a class="predefine-range" href="javascript:;">Last 90 days</a></li>
+        <li><a class="custom-range focus" href="javascript:;">Custom range</a></li>
+      </ul>
+
+      <div class="date-picker-pane show">
+        <div class="date-picker-pane-header">
+          <input id="pane-date-start-input" type="text" class="form-control input-width-xs">
+          <input id="pane-time-start-input" type="text" class="form-control input-width-xs">
+          <div class="tilde">~</div>
+          <input id="pane-date-end-input" type="text" class="form-control input-width-xs">
+          <input id="pane-time-end-input" type="text" class="form-control input-width-xs">
+        </div>
+
+        <div class="date-picker-pane-body">
+          <!--div class="date-picker-pane-container" id="date-pane-date-start"></div>
+          <div class="date-picker-pane-container" id="date-pane-date-end"></div-->
+        </div>
+
+        <div class="date-picker-pane-footer">
+          <button class="btn btn-primary">Apply</button>
+          <button class="btn btn-default">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

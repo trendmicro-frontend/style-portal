@@ -1,0 +1,57 @@
+<section class="css-reference">
+  <h5>Map chart</h5>
+  <pre data-title=":hover">
+    <style data-selector=".style-portal .highcharts .mapcharts .map-bubble .map.map-color-axis:hover"></style>
+  </pre>
+  <h5>Buttons with only an icon</h5>
+  <p>About the button group style, please refer to <a href="#/styles/{{theme}}/{{version}}/e5bd7778-d707-420b-ac64-4a55da161b83">Buttons</a>.</p>
+  <pre>
+    <style data-selector=".style-portal .highcharts .mapcharts .map-bubble .button-group .btn"></style>
+  </pre>
+  <h5>Tooltip Wrapper</h5>
+  <pre>
+     <style data-selector=".highcharts-tooltip > span > table"></style>
+  </pre>
+  <pre>
+     <style data-selector=".style-portal .highcharts .tooltip">For style information on tooltip shadow, apply the default style if using the highcharts library; otherwise, use the following style</style>
+  </pre>
+  <h5>Tooltip Title</h5>
+  <pre>
+     <style data-selector=".highcharts-tooltip > span > table > thead > tr > td"></style>
+  </pre>
+  <h5>Tooltip Series Name</h5>
+  <pre>
+     <style data-selector=".highcharts-tooltip > span > table > tbody > tr > td:first-child"></style>
+  </pre>
+  <h5>Tooltip Series Value</h5>
+  <pre>
+     <style data-selector=".highcharts-tooltip > span > table > tbody > tr > td:last-child"></style>
+  </pre>
+  <h5>Vertical legend wrapper</h5>
+  <pre>
+     <style data-selector=".legend-vertical">Determine the height according to product requirements.</style>
+  </pre>
+  <h5>Vertical legend container</h5>
+  <p>Wrap all vertical legends with a <code data-tag="ul"></code> element.</p>
+  <pre>
+     <style data-selector=".legend-vertical ul"></style>
+  </pre>
+  <h5>Vertical legend</h5>
+  <p>Use <code data-tag="li"></code> for each vertical legend under the <code data-tag="ul"></code> element.</p>
+  <pre>
+     <style data-selector=".legend-vertical ul li"></style>
+  </pre>
+  <pre data-title="Mute state:">
+     <style data-selector=".legend ul li.mute">For style information on legend mute state, apply the default style if using the highcharts library; otherwise, use the following style</style>
+  </pre>
+</section>
+
+<section class="map-color-axis-chart-example">
+   <div class="map-chart-with-button-group">
+      <div id="map-color-axis-chart-container" class="highcharts-container map-color-axis-chart-container"></div>
+      <div class="btn-group-vertical">
+         <button type="button" class="btn btn-border btn-icon-only btn-zoom-in" aria-label="zoomIn"><span class="tmicon tmicon-add"></span></button>
+         <button type="button" class="btn btn-border btn-icon-only btn-zoom-out" aria-label="zoomOut"><span class="tmicon tmicon-minus"></span></button>
+      </div>
+  </div>
+</section>

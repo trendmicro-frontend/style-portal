@@ -1,0 +1,189 @@
+.table-sortable > thead > tr > th:hover {
+  background-color: #444444;
+  cursor: pointer;
+}
+.table-sortable .tmicon-sort-down,
+.table-sortable .tmicon-sort-up {
+  color: #ffffff;
+}
+.table-sortable .sortabled {
+  color: #ffffff;
+}
+.table-sortable .sortabled .tmicon-sort-down + .sort-priority,
+.table-sortable .sortabled .tmicon-sort-up + .sort-priority {
+  display: inline-block;
+  font-size: 11px;
+  color: #ffffff;
+  font-weight: normal;
+  -webkit-transform: scale(0.91);
+  line-height: 0;
+  position: relative;
+  vertical-align: super;
+  left: -4px;
+}
+.table-sortable .sortabled .truncated-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: calc(100% - 16px);
+}
+.table-sortable .multi-sortable {
+  overflow: visible;
+}
+.table-sortable .multi-sortable > div {
+  position: relative;
+}
+.table-sortable .multi-sortable .table-sort-actions {
+  position: absolute;
+  line-height: 0;
+  right: -12px;
+  bottom: -8px;
+}
+.table-sortable .multi-sortable .table-sort-actions .dropdown-toggle .tmicon-caret-down {
+  margin: 0;
+  line-height: 14px;
+  font-size: 14px;
+}
+.table-sortable .multi-sortable .table-sort-actions .dropdown-toggle.btn {
+  display: none;
+  padding: 0;
+}
+.table-sortable .multi-sortable .table-sort-actions .dropdown-toggle.btn:focus {
+  display: block;
+}
+.table-sortable .multi-sortable .table-sort-actions .dropdown-menu li a {
+  padding: 4px 32px 4px 40px;
+}
+.table-sortable .multi-sortable .table-sort-actions .dropdown-menu li.descending a:before,
+.table-sortable .multi-sortable .table-sort-actions .dropdown-menu li.ascending a:before {
+  font-family: TMicon;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 20px;
+  margin: 0 8px 0 -24px;
+  vertical-align: top;
+}
+.table-sortable .multi-sortable .table-sort-actions .dropdown-menu li.descending a:before {
+  content: "\e917";
+}
+.table-sortable .multi-sortable .table-sort-actions .dropdown-menu li.ascending a:before {
+  content: "\e918";
+}
+.table-sortable .multi-sortable:hover .dropdown-toggle.btn {
+  display: block;
+}
+.table-col-min-width {
+  min-width: 80px;
+}
+.JCLRgrips .JCLRgripDrag {
+  border-left: 1px solid #888888 !important;
+}
+.JCLRgripDrag {
+  border-right: 4px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid #888888;
+}
+.JCLRgrip:hover {
+  border-left: 1px solid #888888;
+  cursor: col-resize;
+}
+.table-with-header .toolbar {
+  background-color: #3c3c3c;
+  border: 1px solid #4c4c4c;
+  border-bottom: none;
+}
+.table-with-header .toolbar .items-block {
+  padding: 8px 12px;
+  float: left;
+}
+.table-with-header .toolbar .items-block + .items-block:before {
+  content: ' ';
+  display: block;
+  height: 22px;
+  vertical-align: top;
+  margin-left: -12px;
+  float: left;
+  margin-right: 12px;
+  margin-top: 5px;
+  border-left: 1px solid #666666;
+}
+.table-with-header .toolbar .items-block .selected-records {
+  color: #888888;
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+.table-with-header .toolbar .items-block .selected-records .count {
+  font-weight: bold;
+}
+.table-with-header .toolbar:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.table-with-header.plain-header .toolbar {
+  border: 0;
+  background-color: transparent;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #4c4c4c;
+}
+.table-row-actions {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.table-row-actions .btn-table-row-action {
+  float: left;
+}
+.table-row-actions .btn-table-row-action + .btn-table-row-action,
+.table-row-actions .btn-table-row-action + .table-row-actions,
+.table-row-actions .table-row-actions + .btn-table-row-action,
+.table-row-actions .table-row-actions + .table-row-actions {
+  margin-left: 4px;
+}
+.table-row-actions > .table-row-actions {
+  float: left;
+}
+.btn-table-row-action {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  white-space: nowrap;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.btn-table-row-action:active,
+.btn-table-row-action:focus {
+  background: none;
+  outline: none;
+}
+.btn-table-row-action:hover .tmicon,
+.btn-table-row-action.hover .tmicon,
+.btn-table-row-action:focus .tmicon,
+.btn-table-row-action.focus .tmicon {
+  color: #bbbbbb;
+}
+.btn-table-row-action:hover .tmicon.tmicon-hoverable,
+.btn-table-row-action.hover .tmicon.tmicon-hoverable {
+  color: #ffffff;
+}
+.btn-table-row-action-inline {
+  margin-top: -5px;
+  margin-bottom: -1px;
+}
+.btn-table-row-action-right {
+  margin-top: -3px;
+  float: right;
+}
+.btn-table-row-action-left {
+  margin-top: -3px;
+  float: left;
+}

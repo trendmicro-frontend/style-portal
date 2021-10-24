@@ -1,0 +1,132 @@
+<section class="css-reference">
+  <h5>Banner notification class</h5>
+  <p>Use <code data-tag="div"></code> to create the banner notification class. For example, <code>.alert</code> is used in Bootstrap.</p>
+  <pre>
+    <style data-selector=".alert"></style>
+  </pre>
+  <pre data-title="Stack notifications">
+    <style data-selector=".alert + .alert">Such as .alert + .alert</style>
+  </pre>
+
+  <h5>Contextual class</h5>
+  <pre data-title="Error">
+    <style data-selector=".alert-danger"></style>
+  </pre>
+  <pre data-title="Warning">
+    <style data-selector=".alert-warning"></style>
+  </pre>
+  <pre data-title="Success">
+    <style data-selector=".alert-success"></style>
+  </pre>
+  <pre data-title="Info">
+    <style data-selector=".alert-info"></style>
+  </pre>
+
+  <h5>Alert icon</h5>
+  <p>The icon class should only be used on elements that do not contain text or child elements. We recommend using the <code data-tag="span"></code> element for the icon class.</p>
+  <pre>
+    <style data-selector=".alert > .tmicon:first-of-type">Position the icon</style>
+  </pre>
+
+  <h5>Cancel icon</h5>
+  <pre>
+    <style data-selector=".alert > .cancel">Position the cancel icon</style>
+  </pre>
+  <pre>
+    <style data-selector=".alert > .cancel .tmicon"></style>
+  </pre>
+  <pre data-title=":hover">
+    <style data-selector=".alert > .cancel .tmicon:hover"></style>
+  </pre>
+
+  <h5>Buttons within notifications (optional)</h5>
+  <p>Buttons within notifications should be extra small in size. Please refer to <a href="#/styles/{{theme}}/{{version}}/e5bd7778-d707-420b-ac64-4a55da161b83">Buttons</a></p>
+  <pre>
+    <style data-selector=".alert .btn-xs">Leave a space between button and text.</style>
+  </pre>
+
+  <h5>Links within notifications (optional)</h5>
+  <p>Links within notifications should use link style. Please refer to <a href="#/styles/{{theme}}/{{version}}/aca6f1ac-609a-431c-8fca-739b6c060299">Typography</a>.</p>
+  <pre>
+    <style data-selector=".alert a"></style>
+	</pre>
+	<pre data-title=":hover, :focus">
+    <style data-selector=".alert a:hover"></style>
+  </pre>
+</section>
+
+<section class="alert-example">
+  <p>Banner notifications are messages about banner statuses and events that require user attention and sometimes actions. A banner notification: </p>
+	<p>
+		<div class="lists-unordered">
+			<ul>
+				<li>should appear on the top of a product console, just below the navigation bar.</li>
+				<li>should be full-width, static, and closable.</li>
+				<li>can contain hyperlinks that redirect users to another UI screen or action buttons to perform a task.</li>
+				<li>involving critical issues should only be closable when the alerted situations are resolved.</li>
+			</ul>
+		</div>
+	</p>
+	<p><strong>Types:</strong></p>
+	<div class="lists-unordered">
+		<ul>
+			<li><strong>Error:</strong> This type of banner notification is used to notify critical issues that require the user's immediate attention and action.</li>
+			<li><strong>Warning:</strong> This type of banner notification is used to notify potential issues, but users may not need to do anything.</li>
+			<!-- <li><strong>Confirmational:</strong> they are used to confirm configurations.</li> -->
+			<li><strong>Informational:</strong> This type of banner notification is used to provide users with potentially useful, relevant information.</li>
+		</ul>
+	</div>
+	<p>For detailed information, see <a href="https://wiki.jarvis.trendmicro.com/display/UG/Banner+Messages" target="_blank">Banner Messages</a>.</p>
+	<p>
+		<div class="alert alert-danger fade in" role="alert">
+		  <a href="#" class="cancel" data-dismiss="alert" aria-label="close"><span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span></a>
+		  <span class="tmicon tmicon-error"></span>Your license will expire in 3 days.<button class="btn btn-border btn-xs">Renew Now</button>
+		</div>
+		<div class="alert alert-warning fade in" role="alert">
+		  <a href="#" class="cancel" data-dismiss="alert" aria-label="close"><span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span></a>
+		  <span class="tmicon tmicon-warning-triangle"></span>Your browser is currently not supported. <a href="javascript:;">More Information</a>
+		</div>
+		<!--
+		<div class="alert alert-success" role="alert">
+		  <a href="#" class="cancel" data-dismiss="alert" aria-label="close"><span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span></a>
+		  <span class="icon icon-success"></span>You successfully read this important alert message.
+		</div>
+		-->
+		<div class="alert alert-info fade in" role="alert">
+		  <a href="#" class="cancel" data-dismiss="alert" aria-label="close"><span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span></a>
+		  <span class="tmicon tmicon-info"></span>This notification requires your attention, but it's not super important.
+		</div>
+	</p>
+	<div class="example">
+		<div class="banner-alert-example">
+			<div class="alert-banner">
+				<div class="placeholder" data-type="image" data-src="images/alert_img1_left.png"></div>
+				<div class="placeholder" data-type="image" data-src="images/alert_img1_right.png"></div>
+			</div>
+			<div class="alert alert-warning fade in" role="alert">
+			  <a href="#" class="cancel" data-dismiss="alert" aria-label="close"><span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span></a>
+			  <span class="tmicon tmicon-warning-triangle"></span>Your browser is currently not supported. <a href="javascript:;">More Information</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="example">
+		<div class="banner-alert-example">
+			<h5>Stacked notifications<small> (sort by severity and group similar messages)</small></h5>
+			<div class="banner-alert-example">
+				<div class="alert-banner">
+					<div class="placeholder" data-type="image" data-src="images/alert_img1_left.png"></div>
+					<div class="placeholder" data-type="image" data-src="images/alert_img1_right.png"></div>
+				</div>
+				<div class="alert alert-danger fade in" role="alert">
+				  <a href="#" class="cancel" data-dismiss="alert" aria-label="close"><span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span></a>
+				  <span class="tmicon tmicon-error"></span>Your license will expire in 3 days.<button class="btn btn-border btn-xs">Renew Now</button>
+				</div>
+				<div class="alert alert-warning fade in" role="alert">
+				  <a href="#" class="cancel" data-dismiss="alert" aria-label="close"><span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span></a>
+				  <span class="tmicon tmicon-warning-triangle"></span>Your browser is currently not supported. <a href="javascript:;">More Information</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

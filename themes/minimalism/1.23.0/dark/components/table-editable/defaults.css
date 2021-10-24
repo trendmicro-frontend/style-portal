@@ -1,0 +1,58 @@
+.table-single-field-edit-example .lists-unordered ul,
+.table-button-edit-example .lists-unordered ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.table-inline-editing-example .table > thead > tr > th:nth-child(1),
+.table-inline-editing-example .table > tbody > tr > td:nth-child(1) {
+	width: 11.76%;
+}
+.table-inline-editing-example .table > thead > tr > th:nth-child(2),
+.table-inline-editing-example .table > tbody > tr > td:nth-child(2) {
+	width: 11.76%;
+}
+.table-inline-editing-example .table > thead > tr > th:nth-child(3),
+.table-inline-editing-example .table > tbody > tr > td:nth-child(3) {
+	width: 11.76%;
+}
+.table-inline-editing-example .table > thead > tr > th:nth-child(4),
+.table-inline-editing-example .table > tbody > tr > td:nth-child(4) {
+	width: 35.3%;
+}
+.table-inline-editing-example .table-edit > tbody > tr td.edit-cell .editable-inline .form-group {
+	display: block;
+	margin-right: 0;
+	float: none;
+}
+.table-inline-editing-example .table-edit > tbody > tr td.edit-cell .editable-inline .form-group .form-control {
+	margin-left: 0;
+	width: 100%;
+}
+.table-single-field-edit-example .popover .arrow,
+.table-button-edit-example .popover .arrow{
+	left: 16px !important;
+}
+.table-single-field-edit-example .popover.align-left,
+.table-button-edit-example .popover.align-left{
+	left: 0 !important;
+}
+
+.table-edit.inline-button-validation > tbody > tr td.edit-cell,
+.table-edit.single-field-validation > tbody > tr td.edit-cell {
+  overflow: visible;
+}
+.table-edit.inline-button-validation > tbody > tr td.edit-cell .editable-inline .form-group,
+.table-edit.single-field-validation > tbody > tr td.edit-cell .editable-inline .form-group {
+  margin: 0;
+}
+.table-edit.inline-button-validation > tbody > tr td.edit-cell .editable-inline .form-group > div .editable-input,
+.table-edit.single-field-validation > tbody > tr td.edit-cell .editable-inline .form-group > div .editable-input {
+  border-radius: 3px;
+  border: 1px solid #db3d44;
+}
+.table-edit.inline-button-validation > tbody > tr td.edit-cell .editable-inline .form-group > div .editable-input .popover,
+.table-edit.single-field-validation > tbody > tr td.edit-cell .editable-inline .form-group > div .editable-input .popover {
+  top: 32px; 
+  left: 0; 
+  display: block;
+}

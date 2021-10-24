@@ -1,0 +1,45 @@
+.table-row-draggable .table-draggable-placeholder td {
+  border: 0;
+  background: #111111;
+}
+.table-row-draggable .ui-sortable-handle:hover td .draggable-indicator {
+  position: relative;
+}
+.table-row-draggable .ui-sortable-handle:hover td .draggable-indicator:before {
+  content: '';
+  width: 8px;
+  height: 36px;
+  top: -8px;
+  left: -10px;
+  cursor: move;
+  position: absolute;
+  background-image: url(../images/icon/icon_indicator_darkmode.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.table-row-draggable-helper {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+  background: #3c3c3c;
+  cursor: move;
+}
+.table-row-draggable-helper > tbody > tr:hover {
+  background: #3c3c3c;
+}
+.table-row-draggable-helper > tbody > tr > td {
+  border: 1px solid #555555;
+}
+.table-column-draggable thead th.column-sortable:hover {
+  cursor: pointer;
+}
+.table-column-draggable thead th.ui-column-highlight {
+  background-color: #444444;
+  color: #555555;
+}
+.column-sortable.ui-draggable-dragging {
+  background-color: #4c4c4c;
+  border: 1px solid #777777;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  color: #aaaaaa;
+  font-weight: bold;
+}

@@ -1,0 +1,251 @@
+<section class="css-reference">
+  <h5>Tree nodes containers</h5>
+  <p>Wrap tree nodes which have the same parent node with a container.</p>
+  <pre>
+    <style data-selector=".tree-nodes"></style>
+  </pre>
+
+  <pre data-title="For the level 1 container and child containers under expanded parent nodes">
+    <style data-selector=".tree-nodes-level-1"></style>
+  </pre>
+
+  <pre data-title="Connecting lines">
+    <style data-selector=".tree-node-open > .tree-nodes:before">Within an expanded parent node</style>
+    <style data-selector=".tree-node-hover > .tree-nodes:before">When mouseover a parent node</style>
+    <style data-selector=".tree-node-hover > .tree-nodes-level-2:before">Level 2 containers</style>
+    <style data-selector=".tree-node-hover > .tree-nodes-level-3:before">Level 3 containers</style>
+    <style data-selector=".tree-node-hover > .tree-nodes-level-4:before">Level 4 containers</style>
+    <style data-selector=".tree-node-hover > .tree-nodes-level-5:before">Level 5 containers</style>
+    <style data-selector=".tree-node-hover > .tree-nodes-level-6:before">Level 6 containers</style>
+  </pre>
+
+  <h5>Tree nodes</h5>
+  <p>Wrap the expand button and label with a container.</p>
+  <pre>
+    <style data-selector=".tree-node"></style>
+  </pre>
+
+  <pre data-title="When hover a node">
+    <style data-selector=".tree-node-hoverable"></style>
+  </pre>
+
+  <h5>Node labels</h5>
+  <p>Wrap the expand button and text with a container.</p>
+  <pre>
+    <style data-selector=".tree-node-label"></style>
+  </pre>
+
+  <pre data-title="Labels within exandable nodes">
+    <style data-selector=".tree-nodes-level-1 > .tree-node-expandable > .tree-node-label">Level 1 nodes</style>
+    <style data-selector=".tree-nodes-level-2 > .tree-node-expandable > .tree-node-label">Level 2 nodes</style>
+    <style data-selector=".tree-nodes-level-3 > .tree-node-expandable > .tree-node-label">Level 3 nodes</style>
+    <style data-selector=".tree-nodes-level-4 > .tree-node-expandable > .tree-node-label">Level 4 nodes</style>
+    <style data-selector=".tree-nodes-level-5 > .tree-node-expandable > .tree-node-label">Level 5 nodes</style>
+    <style data-selector=".tree-nodes-level-6 > .tree-node-expandable > .tree-node-label">Level 6 nodes</style>
+  </pre>
+
+  <pre data-title="Labels within non-exandable nodes">
+    <style data-selector=".tree-nodes-level-1 > .tree-node:not(.tree-node-expandable) > .tree-node-label">Level 1 rows</style>
+    <style data-selector=".tree-nodes-level-2 > .tree-node:not(.tree-node-expandable) > .tree-node-label">Level 2 rows</style>
+    <style data-selector=".tree-nodes-level-3 > .tree-node:not(.tree-node-expandable) > .tree-node-label">Level 3 rows</style>
+    <style data-selector=".tree-nodes-level-4 > .tree-node:not(.tree-node-expandable) > .tree-node-label">Level 4 rows</style>
+    <style data-selector=".tree-nodes-level-5 > .tree-node:not(.tree-node-expandable) > .tree-node-label">Level 5 rows</style>
+    <style data-selector=".tree-nodes-level-6 > .tree-node:not(.tree-node-expandable) > .tree-node-label">Level 6 rows</style>
+  </pre>
+
+  <pre data-title="When hover">
+    <style data-selector=".tree-node-hover:not(.tree-node-active) > .tree-node-label"></style>
+  </pre>
+
+  <pre data-title="When active">
+    <style data-selector=".tree-node-active > .tree-node-label"></style>
+  </pre>
+
+  <h5>Expand buttons</h5>
+  <pre data-title="Buttons">
+    <style data-selector=".tree-node-expand-button"></style>
+  </pre>
+
+  <pre data-title="When focus a button">
+    <style data-selector=".tree-node-expand-button:focus"></style>
+  </pre>
+
+  <pre data-title="Caret icons">
+    <style data-selector=".tree-node-expand-button .tree-node-expand-icon"></style>
+    <style data-selector=".tree-node-expanded > .tree-node-label > .tree-node-expand-button > .tree-node-expand-icon">Within expanded nodes</style>
+  </pre>
+
+  <h5>Texts</h5>
+  <pre>
+    <style data-selector=".tree-node-text"></style>
+  </pre>
+
+  <pre data-title="When active">
+    <style data-selector=".tree-node-active > .tree-node-label > .tree-node-text"></style>
+  </pre>
+</section>
+
+<section>
+  <p>Use a basic tree view for multiple layer tree navigation with a hierarchically arranged collection.</p>
+
+  <ul>
+    <li>When mouseover a node, change the background color and the pointer cursor.</li>
+    <li>When mouseover any expanded container nodes, consider to show connecting lines to indicate which item is the last node.</li>
+    <li>When a user clicks an expansion icon to expand a tree node, display the connecting line until the user clicks a node or another expansion icon.</li>
+    <li>Bold the node label and change the background color to highlight which items are being viewed.</li>
+  </ul>
+
+  <div class="tree" style="width: 320px;" role="tree">
+    <div class="tree-nodes tree-nodes-level-1" role="group">
+      <div class="tree-node tree-node-expandable tree-node-expanded" data-level="1">
+        <div class="tree-node-label">
+          <button class="tree-node-expand-button">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+          </button>
+
+          <span class="tree-node-text">Group 1</span>
+        </div>
+
+        <div class="tree-nodes tree-nodes-level-2" role="group">
+          <div class="tree-node tree-node-expandable tree-node-expanded" data-level="2">
+            <div class="tree-node-label">
+              <button class="tree-node-expand-button">
+                <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+              </button>
+
+              <span class="tree-node-text">Asia</span>
+            </div>
+
+            <div class="tree-nodes tree-nodes-level-3" role="group">
+              <div class="tree-node tree-node-expandable tree-node-expanded" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                  </button>
+
+                  <span class="tree-node-text">Taiwan</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Taipei</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Taichung</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">Repo-Kaohsiung</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                  </button>
+
+                  <span class="tree-node-text">Janpan</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Tokyo</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Okinawa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node" data-level="3">
+                <div class="tree-node-label">
+                  <span class="tree-node-text">Master01-Singapore</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree-node tree-node-expandable" data-level="2">
+            <div class="tree-node-label">
+              <button class="tree-node-expand-button">
+                <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+              </button>
+
+              <span class="tree-node-text">Europe</span>
+            </div>
+
+            <div class="tree-nodes tree-nodes-level-3" role="group">
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                  </button>
+
+                  <span class="tree-node-text">Germany</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Berlin</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Munich</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                  </button>
+
+                  <span class="tree-node-text">Spain</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Madrid</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node" data-level="3">
+                <div class="tree-node-label">
+                  <span class="tree-node-text">DDI-Italy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-node" data-level="1">
+        <div class="tree-node-label">
+          <span class="tree-node-text">Group 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

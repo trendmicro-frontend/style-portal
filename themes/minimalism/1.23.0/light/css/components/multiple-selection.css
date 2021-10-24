@@ -1,0 +1,119 @@
+.ms-container {
+  background: transparent url('../images/icon/exchange.png') no-repeat 50% 50%;
+  width: 480px;
+}
+.ms-container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+  min-height: 0;
+  visibility: hidden;
+}
+.ms-container .ms-selectable,
+.ms-container .ms-selection {
+  background: #ffffff;
+  float: left;
+  width: 224px;
+}
+.ms-container .ms-selection {
+  float: right;
+}
+.ms-container .ms-list {
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  position: relative;
+  height: 150px;
+  padding: 8px 0;
+  overflow-y: auto;
+}
+.ms-container .ms-list.ms-focus {
+  border: 1px solid #cccccc;
+  outline: 0;
+}
+.ms-container ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.ms-container .ms-optgroup-container {
+  width: 100%;
+}
+.ms-container .ms-optgroup-label {
+  margin: 0;
+  padding: 4px 0px 0px 12px;
+  cursor: pointer;
+  color: #888888;
+  font-size: 12px;
+}
+.ms-container .ms-selectable li.ms-elem-selectable,
+.ms-container .ms-selection li.ms-elem-selection {
+  padding: 4px 12px;
+}
+.ms-container .ms-optgroup li.ms-elem-selectable,
+.ms-container .ms-optgroup li.ms-elem-selection {
+  padding: 4px 24px;
+}
+.ms-container .ms-selectable li.ms-hover,
+.ms-container .ms-selection li.ms-hover {
+  cursor: pointer;
+  color: #222222;
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.ms-advanced-container {
+  background: none;
+  width: 506px;
+}
+.ms-advanced-container:focus {
+  outline: none;
+}
+.ms-advanced-container .ms-selectable:focus,
+.ms-advanced-container .ms-selection:focus {
+  outline: none;
+}
+.ms-advanced-container .ms-selectable .ms-list-item:focus,
+.ms-advanced-container .ms-selection .ms-list-item:focus {
+  outline: none;
+}
+.ms-advanced-container .ms-selectable .ms-list-item.ms-activating,
+.ms-advanced-container .ms-selection .ms-list-item.ms-activating,
+.ms-advanced-container .ms-selectable .ms-list-item.ms-active,
+.ms-advanced-container .ms-selection .ms-list-item.ms-active {
+  background-color: #ddd;
+  color: #222;
+}
+.ms-advanced-container .ms-select-focus .ms-list {
+  border: 1px solid #0096cc;
+}
+.ms-advanced-container .ms-select-focus .ms-list-item.ms-activating,
+.ms-advanced-container .ms-select-focus .ms-list-item.ms-active {
+  background-color: #33abd6;
+  color: #fff;
+}
+.ms-advanced-container .ms-select-focus .ms-list-item.ms-activating:focus,
+.ms-advanced-container .ms-select-focus .ms-list-item.ms-active:focus {
+  outline: 1px solid #0382b0;
+}
+.ms-advanced-container .ms-list {
+  height: 180px;
+}
+.ms-advanced-container .ms-elem-selectable,
+.ms-advanced-container .ms-elem-selection,
+.ms-advanced-container .ms-optgroup-label {
+  user-select: none !important;
+}
+.ms-buttons {
+  display: inline-block;
+  padding: 20px 8px;
+}
+.ms-buttons > .btn {
+  display: block;
+  margin: 0;
+}
+.ms-buttons > .btn + .btn {
+  margin-top: 4px;
+}

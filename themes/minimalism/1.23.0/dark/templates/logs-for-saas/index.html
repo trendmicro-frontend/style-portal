@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Logs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- <link href="../../css/main.css" rel="stylesheet"> -->
+        <link href="../../../public/themes/minimalism/1.20.0/light/css/main.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/logo-apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/logo-apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/logo-apple-touch-icon-72.png">
+        <link rel="shortcut icon" href="/assets/img/logo_32.png">
+        <!-- customized style -->
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navigation collapsed">
+                <button class="sidebar-toggle" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul id="sidebarExample" class="navigation-items"></ul>
+            </nav>
+            <header class="site-header">
+                <div class="banner">
+                    <div class="brand-logo"></div><h1 class="site-title">Worry-Free Business Security Services</h1>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="tmicon tmicon-user"></span>Admin_TW<span class="tmicon tmicon-caret-down"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:;">Change Password</a></li>
+                            <li><a href="javascript:;">Log off</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </header>
+            <div class="breadcrumb-container">
+              <div class="breadcrumb-header">
+                <a href="javascript:;">
+                  <span class="icon icon-t-ball"></span>
+                </a>
+              </div>
+              <ul class="breadcrumb">
+                  <li class="active">Logs</li>
+              </ul>
+              <ul class="resources">
+                <li>
+                  <a class="help"><i class="tmicon tmicon-help-o tmicon-hoverable"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-table table-with-header">
+                <div class="toolbar">
+                  <div class="items-block">
+                    <div class="input-group">
+                      <div class="dropdown">
+                        <button class="btn btn-border dropdown-toggle" data-toggle="dropdown" type="button">
+                          <span class="tmicon tmicon-caret-down"></span>
+                          <span class="btn-label">Security Risk Detections:</span>
+                          All
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="javascript:;">Menu item one</a></li>
+                          <li><a href="javascript:;">Menu item two</a></li>
+                          <li><a href="javascript:;">Menu item three</a></li>
+                          <li><a href="javascript:;">Menu item four</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="date-time-picker-example">
+                      <div id="date-time-range-dropdown" class="dropdown time-range-wrapper">
+                        <button class="btn btn-border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+                          <span class="tmicon tmicon-caret-down"></span><span class="tmicon tmicon-calendar"></span><span id="date-time-range-text">Last 24 hours</span>
+                        </button>
+                        <div class="custom-wrapper">
+                          <ul class="dropdown-menu">
+                            <li><a class="predefine-range" href="javascript:;">Last 24 hours</a></li>
+                            <li><a class="predefine-range" href="javascript:;">Last 7 days</a></li>
+                            <li><a class="predefine-range" href="javascript:;">Last 30 days</a></li>
+                            <li><a class="predefine-range" href="javascript:;">Last 90 days</a></li>
+                            <li><a class="custom-range" href="javascript:;">Custom range</a></li>
+                          </ul>
+                    
+                          <div class="date-picker-pane">
+                            <div class="date-picker-pane-header">
+                              <input id="pane-date-start-input" type="text" class="form-control input-width-xs">
+                              <input id="pane-time-start-input" type="text" class="form-control input-width-xs">
+                              <div class="tilde">~</div>
+                              <input id="pane-date-end-input" type="text" class="form-control input-width-xs">
+                              <input id="pane-time-end-input" type="text" class="form-control input-width-xs">
+                            </div>
+                    
+                            <div class="date-picker-pane-body"></div>
+                    
+                            <div class="date-picker-pane-footer">
+                              <button class="btn btn-primary">Apply</button>
+                              <button class="btn btn-default">Cancel</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pull-right">
+                    <div class="items-block">
+                      <span class="help-text">35 records</span>
+                      <button type="button" class="btn btn-default btn-border"><span class="tmicon tmicon-export"></span>Export</button><button type="button" class="btn btn-default btn-border btn-icon-only"><span class="tmicon tmicon-refresh"></span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-header">
+                  <table class="table table-bordered table-hover table-longtext-truncated table-sortable">
+                    <thead>
+                      <tr>
+                        <th class="sortabled">
+                          Date/Time
+                          <span class="tmicon tmicon-sort-down"></span>
+                        </th>
+                        <th>Category</th>
+                        <th>Threat/Violation</th>
+                        <th>File Path/Target</th>
+                        <th>Action/Result</th>
+                        <th>Endpoint</th>
+                        <th>User</th>
+                        <th>Details</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+                <table class="table table-bordered table-hover table-longtext-truncated table-sortable">
+                  <tbody>
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">TESTPOLY</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">KYLG_TestVir-NNM</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Detected</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Quaranitined</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">CRYPWALL.AFT</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">Cookie_Adverstising</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">TESTPOLY</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">KYLG_TestVir-NNM</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Detected</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Quaranitined</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">CRYPWALL.AFT</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">Cookie_Adverstising</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">TESTPOLY</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">KYLG_TestVir-NNM</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Detected</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Quaranitined</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">CRYPWALL.AFT</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">Cookie_Adverstising</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">TESTPOLY</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">KYLG_TestVir-NNM</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Detected</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Quaranitined</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">CRYPWALL.AFT</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">Cookie_Adverstising</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">TESTPOLY</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">DESKTOP-6OJ7</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">KYLG_TestVir-NNM</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Detected</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">NE_TESTPOLY</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Quaranitined</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Virus/Malware</td>
+                      <td class="td-link"><a href="javascript:;">CRYPWALL.AFT</a></td>
+                      <td>C:\User\Administrator\KYLGVir-NNM.exe</td>
+                      <td>Blocked</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                          <button class="btn-table-row-action dropdown-toggle">
+                            <span class="tmicon tmicon-rca tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>2017-10-31 08:57:27</td>
+                      <td>Spyware/Grayware</td>
+                      <td class="td-link"><a href="javascript:;">Cookie_Adverstising</a></td>
+                      <td>Cookie:jp-win7-sp1-32@atwola.com/</td>
+                      <td>Cleaned</td>
+                      <td class="td-link"><a href="javascript:;">tw-paxiontang2</a></td>
+                      <td class="td-link"><a href="javascript:;">Trend</a></td>
+                      <td class="td-actions">
+                        <div class="table-row-actions" role="group">
+                          <button class="btn-table-row-action">
+                            <span class="tmicon tmicon-detail tmicon-hoverable"></span>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        
+        </div>
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+        <script src="/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="js/jquery.fn.exists.js"></script>
+        <script src="js/jquery.category.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

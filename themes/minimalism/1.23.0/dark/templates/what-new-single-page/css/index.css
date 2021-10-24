@@ -1,0 +1,148 @@
+body {
+	background: #EEE;
+    left: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+.container-fluid {
+    padding: 0 16px;
+}
+header.site-header {
+    padding: 0 24px;
+    padding-right: 0;
+}
+.site-header {
+    position: relative;
+    padding: 0 20px;
+    height: 64px;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 1px #ddd solid;
+}
+.navbar {
+    padding: 0;
+}
+.site-header a:link,
+.site-header a:hover,
+.site-header a:active,
+.site-header a:visited,
+.site-header a:focus {
+    color: #222;
+}
+.site-header .banner {
+    background: url(../images/tball.svg) center left no-repeat;
+    background-size: 32px;
+    float: left;
+    height: 63px;
+    padding: 0;
+}
+.site-header .banner,
+.site-header .banner :hover {
+    text-decoration: none;
+}
+.site-title {
+    margin: 14px 0 0 42px;
+    line-height: 36px;
+    font-family: "Interstate-Light", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+}
+.site-header .dropdown-toggle {
+    margin-top: 0;
+}
+.breadcrumb {
+    background: #fff;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.panel-body p:last-child {
+    margin-bottom: 0;
+}
+.panel-body a {
+    text-decoration: none;
+}
+.about-content {
+    max-width: 700px;
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 960px;
+    }
+}
+.modal-lg .modal-body {
+    padding: 0;
+    overflow: hidden;
+}
+.display3 {
+    font-family: Interstate-ExtraLight, Arial, "Helvetica Neue", Helvetica, font-family-sans-serif;
+    text-align: center;
+    font-weight: normal;
+}
+.modal-header {
+    padding: 21px 24px;
+    transition: all 0.5s;
+}
+.modal-header button {
+    font-size: inherit;
+    margin-top: 9px;
+}
+.what-new-container {
+    padding: 24px 40px 28px;
+}
+.what-new-content + .what-new-content{
+    margin-left: 80px;
+}
+.functionalities {
+    display: table;
+    margin: -12px -24px;
+    border-collapse: separate;
+    border-spacing: 24px;
+}
+.functionalities-row {
+    display: table-row;
+}
+.function {
+    display: table-cell;
+    width: 493px;
+    padding: 16px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+}
+.function .banner {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    float: left;
+}
+.function .des {
+    display: flex;
+    flex-direction: column;
+}
+.function .function-title {
+    font-weight: normal;
+    margin: 0 0 4px 0;
+}
+.function p {
+    margin-bottom: 0;
+    min-height: 60px
+}
+.modal-footer {
+    text-align: left;
+    padding: 16px 24px;
+}
+.screen-info {
+    display: inline-block;
+    margin-top: 6px;
+    color: #666666;
+}
+.screen-info a {
+    text-decoration: none;
+}

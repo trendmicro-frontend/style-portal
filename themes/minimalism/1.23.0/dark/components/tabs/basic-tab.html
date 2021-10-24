@@ -1,0 +1,54 @@
+<section class="css-reference">
+  <h5>Tabs wrapper</h5>
+  <p>Create a nav wrapper using a <code data-tag="ul"></code> element.</p>
+  <pre>
+    <style data-selector=".nav"></style>
+  </pre>
+  <pre data-title="::before">
+    <style data-selector=".nav:before"></style>
+  </pre>
+  <pre data-title="::after">
+    <style data-selector=".nav:after"></style>
+  </pre>
+
+  <h5>Tabs</h5>
+  <p>Use <code data-tag="li"></code> for each tab under the <code data-tag="ul"></code> elements.</p>
+  <pre>
+    <style data-selector=".nav > li"></style>
+  </pre>
+  <pre>
+    <style data-selector=".nav-tabs > li"></style>
+  </pre>
+  <pre data-title="Prevent double borders between tabs">
+    <style data-selector=".nav-tabs > li + li"></style>
+  </pre>
+
+  <h5>Tab links</h5>
+  <p>Use <code data-tag="a"></code> for each item under <code data-tag="li"></code> elements.</p>
+  <pre>
+    <style data-selector=".nav > li > a"></style>
+  </pre>
+  <pre>
+    <style data-selector=".nav-tabs > li > a"></style>
+  </pre>
+  <pre data-title=":hover">
+    <style data-selector=".nav-tabs > li > a:hover"></style>
+  </pre>
+  <pre data-title=":active">
+    <style data-selector=".nav-tabs > li > a:active"></style>
+  </pre>
+  <pre data-title="When a tab is active">
+    <style data-selector=".nav-tabs > li.active > a"></style>
+  </pre>
+</section>
+
+<section class="tab-example">
+  <p>Tabs are used for alternating between views within the same context. Keep tab labels as shorst as possible -- users will understand that the tab label is a subgroup of any heading above the tabed area. Bear in mind that horizontal space for tabs is limited.</p>
+	<h5>Basic tab</h5>
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#Item1" aria-controls="Item1" role="tab" data-toggle="tab">Item1</a></li>
+		<li><a href="#Item2" aria-controls="Item2" role="tab" data-toggle="tab">Item2</a></li>
+		<li><a href="#Item3" aria-controls="Item3" role="tab" data-toggle="tab">Item3</a></li>
+		<li><a href="#Item4" aria-controls="Item4" role="tab" data-toggle="tab">Item4</a></li>
+	</ul>
+</section>

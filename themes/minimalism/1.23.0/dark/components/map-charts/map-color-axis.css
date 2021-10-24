@@ -1,0 +1,9 @@
+.map-color-axis-chart-container .highcharts-legend-item {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.map-color-axis-chart-container .highcharts-legend-item rect.highcharts-point {
+    y: 7px;
+}
+.map-color-axis-chart-container .highcharts-legend-item-hidden rect.highcharts-point {
+    fill: #4c4c4c;
+}

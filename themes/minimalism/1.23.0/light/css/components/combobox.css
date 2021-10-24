@@ -1,0 +1,72 @@
+.combobox .form-control {
+  padding-right: 48px;
+  padding-left: 12px;
+}
+.combobox.selected .form-control:focus {
+  color: #888888;
+}
+.combobox.selected:hover [data-toggle="close"],
+.combobox.selected .form-control + [data-toggle="close"]:hover,
+.combobox.selected .form-control:hover + [data-toggle="close"],
+.combobox.selected .form-control:focus + [data-toggle="close"] {
+  display: block;
+}
+.combobox [data-toggle="close"] {
+  display: none;
+}
+.combobox .tmicon-close-s {
+  right: 25px;
+}
+.combobox .dropdown-menu {
+  right: 0;
+  left: inherit;
+  width: 100%;
+}
+.combobox .dropdown-menu > li {
+  display: block;
+  padding: 4px 16px;
+  clear: both;
+  font-weight: normal;
+  line-height: 20px;
+  white-space: nowrap;
+}
+.combobox .dropdown-menu > li:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.combobox .dropdown-menu > li.selected {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.combobox .dropdown-menu > li.actived {
+  background: #f4f4f4;
+}
+.combobox .dropdown-menu .no-matches,
+.combobox .dropdown-menu li.no-matches {
+  color: #888888;
+}
+.combobox .dropdown-menu .no-matches:hover,
+.combobox .dropdown-menu li.no-matches:hover,
+.combobox .dropdown-menu .no-matches.selected,
+.combobox .dropdown-menu li.no-matches.selected {
+  color: #888888;
+  background-color: #ffffff;
+  cursor: text;
+}
+.combobox:after {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  height: 32px;
+  width: 24px;
+  content: " ";
+  background: url(../images/icon/selectCaretDown.svg) no-repeat;
+  background-position-y: 7px;
+  background-position-x: left;
+  cursor: pointer;
+}
+.disabled.combobox:after {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: not-allowed;
+}

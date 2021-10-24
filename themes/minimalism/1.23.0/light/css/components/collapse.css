@@ -1,0 +1,125 @@
+.panel-group-collapse > .panel + .panel {
+  margin-top: 0;
+  border-top: 0;
+}
+.panel-group-collapse > .panel > .panel-heading {
+  cursor: pointer;
+}
+.panel-group-collapse > .panel > .panel-heading:hover > .panel-title > .tmicon-caret-right,
+.panel-group-collapse > .panel > .panel-heading:hover > .panel-title > .tmicon-chevron-down {
+  color: #222222;
+}
+.panel-group-collapse > .panel > .panel-heading > .panel-title > .tmicon-caret-right {
+  float: left;
+  margin-right: 8px;
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+.panel-group-collapse > .panel > .panel-heading[aria-expanded="true"] > .panel-title {
+  font-weight: bold;
+}
+.panel-group-collapse > .panel > .panel-heading[aria-expanded="true"] > .panel-title > .tmicon-caret-right {
+  transform: rotateZ(90deg);
+}
+.panel-group-collapse > .panel > .panel-collapse > .panel-body {
+  border-top: 0;
+  padding: 16px 60px;
+}
+.panel-group-collapse-basic > .panel {
+  border-color: #ccc;
+}
+.panel-group-collapse-basic > .panel > .panel-heading {
+  background-color: #f4f4f4;
+}
+.panel-group-collapse-basic > .panel > .panel-heading:hover {
+  background-color: #eee;
+}
+.panel-group-collapse-basic > .panel > .panel-heading:hover[aria-expanded="true"] {
+  background-color: #f4f4f4;
+}
+.panel-group-collapse-light > .panel {
+  border-color: #e6e6e6;
+  border-width: 0;
+  border-bottom-width: 1px;
+}
+.panel-group-collapse-light > .panel > .panel-heading:hover {
+  background-color: #f4f4f4;
+}
+.panel-group-collapse-light > .panel > .panel-heading:hover[aria-expanded="true"] {
+  background-color: transparent;
+}
+.panel-group-collapse-light > .panel > .panel-collapse > .panel-body {
+  padding-top: 0;
+}
+.panel-group-collapse-popout > .panel,
+.panel-group-collapse-popout > .panel + .panel {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-top-color: #e6e6e6;
+  border-bottom: 0;
+  transition: margin-top 0.25s ease;
+  position: relative;
+  z-index: 2;
+}
+.panel-group-collapse-popout > .panel:hover {
+  z-index: 1;
+}
+.panel-group-collapse-popout > .panel:first-child {
+  border-top-color: transparent;
+}
+.panel-group-collapse-popout > .panel:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+.panel-group-collapse-popout > .panel.panel-collapse-show,
+.panel-group-collapse-popout > .panel.panel-collapse-shown {
+  border: 1px #ccc solid;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.panel-group-collapse-popout > .panel.panel-collapse-show + .panel-collapse-show,
+.panel-group-collapse-popout > .panel.panel-collapse-shown + .panel-collapse-show,
+.panel-group-collapse-popout > .panel.panel-collapse-show + .panel-collapse-shown,
+.panel-group-collapse-popout > .panel.panel-collapse-shown + .panel-collapse-shown {
+  margin-top: 16px;
+}
+.panel-group-collapse-popout > .panel.panel-collapse-show + .panel-collapse-hidden,
+.panel-group-collapse-popout > .panel.panel-collapse-shown + .panel-collapse-hidden {
+  border-top-color: transparent;
+}
+.panel-group-collapse-popout > .panel > .panel-heading {
+  background-color: transparent;
+}
+.panel-group-collapse-popout > .panel > .panel-heading:hover {
+  background-color: #f4f4f4;
+}
+.panel-group-collapse-popout > .panel > .panel-heading:hover[aria-expanded="true"] {
+  background-color: transparent;
+}
+.panel-group-collapse-popout > .panel > .panel-collapse > .panel-body {
+  padding-top: 0;
+}
+.panel-group-collapse-nest > .panel {
+  border: 0;
+}
+.panel-group-collapse-nest > .panel + .panel {
+  margin-top: 16px;
+}
+.panel-group-collapse-nest > .panel > .panel-heading {
+  background-color: #eee;
+}
+.panel-group-collapse-nest > .panel > .panel-heading > .panel-title > .tmicon-chevron-down {
+  float: right;
+  transform-origin: center;
+  transition: transform .35s ease;
+}
+.panel-group-collapse-nest > .panel > .panel-heading[aria-expanded="true"] > .panel-title > .tmicon-chevron-down {
+  transform: rotateZ(180deg);
+}
+.panel-group-collapse-nest > .panel > .panel-heading:hover {
+  background-color: #e6e6e6;
+}
+.panel-group-collapse-nest > .panel > .panel-heading:hover[aria-expanded="true"] {
+  background-color: #eee;
+}
+.panel-group-collapse-nest > .panel > .panel-collapse > .panel-body {
+  padding: 8px 0 0;
+}

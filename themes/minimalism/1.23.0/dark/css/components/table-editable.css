@@ -1,0 +1,59 @@
+.table-edit.single-field > tbody > tr td.edit-cell.edit-mode,
+.table-edit.inline-button > tbody > tr td.edit-cell.edit-mode {
+  overflow: visible;
+}
+.table-edit > tbody > tr td.edit-cell.edit-mode,
+.table-edit > tbody > tr td.edit-cell.error-mode {
+  padding: 2px 2px;
+}
+.table-edit > tbody > tr td.edit-cell .editable {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.table-edit > tbody > tr td.edit-cell .editable-inline .form-group .form-control {
+  padding: 5px 12px 5px 9px;
+}
+.table-edit > tbody > tr td.edit-cell:hover {
+  padding: 2px 2px;
+}
+.table-edit > tbody > tr td.edit-cell:hover .editable {
+  display: block;
+  padding: 5px 12px 5px 9px;
+  border: 1px solid #33abd6;
+  background-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.table-edit > tbody > tr td.edit-cell.error-mode .editable {
+  display: block;
+  padding: 5px 12px 5px 9px;
+  border: 1px solid #db3d44;
+  border-radius: 3px;
+}
+.table-edit > tbody > tr td.edit-cell .editable-inline {
+  position: relative;
+  display: block;
+}
+.table-edit.inline-button > tbody > tr td.edit-cell .editable-inline .form-group > div {
+  display: flex;
+}
+.table-edit.inline-button > tbody > tr td.edit-cell .editable-inline .form-group > div .editable-input {
+  flex: 1;
+}
+.table-edit.inline-button > tbody > tr td.edit-cell .editable-inline .form-group > div .editable-buttons {
+  margin-left: 2px;
+}
+.table-edit.inline-button > tbody > tr td.edit-cell .editable-inline .form-group > div .editable-buttons .btn.btn-icon-only {
+  width: 34px;
+}
+.table-edit.inline-button > tbody > tr td.edit-cell .editable-inline .form-group > div .editable-buttons .btn + .btn {
+  margin-left: 2px;
+}
+.table-edit.inline-button > tbody > tr td.edit-cell.edit-mode.error-mode input[type="text"]:focus {
+  border-color: #db3d44;
+}
+.table-edit .popover.align-left {
+  left: 0;
+}

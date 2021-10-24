@@ -1,0 +1,64 @@
+.breadcrumb:before,
+.breadcrumb:after {
+  content: " ";
+  display: table;
+}
+.breadcrumb:after {
+  clear: both;
+}
+nav.affix {
+  width: auto;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+nav.affix-top .breadcrumb-header {
+  margin-left: -54px;
+  transition: margin 0.05s ease-out;
+}
+nav.affix .breadcrumb-header {
+  margin-left: 0;
+}
+.breadcrumb-header {
+  float: left;
+  margin-left: -54px;
+  padding: 12px 0;
+  line-height: 24px;
+  margin-right: 12px;
+  transition: margin 0.2s ease-out;
+}
+.breadcrumb-header + .breadcrumb {
+  float: left;
+}
+.breadcrumb {
+  padding: 12px 0;
+  list-style: none;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+.breadcrumb.with-line {
+  border-bottom: 1px #e6e6e6 solid;
+  margin-bottom: 16px;
+}
+.breadcrumb > li {
+  float: left;
+  font-size: 16px;
+  color: #888888;
+  line-height: 24px;
+}
+.breadcrumb > li > a {
+  color: #888888;
+  text-decoration: none;
+}
+.breadcrumb > li > a:hover,
+.breadcrumb > li > a:focus {
+  color: #0096cc;
+}
+.breadcrumb > li + li:before {
+  content: "›";
+  padding: 0 5px;
+  color: #888888;
+}
+.breadcrumb > .active {
+  color: #222222;
+}

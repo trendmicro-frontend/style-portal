@@ -1,0 +1,59 @@
+.notification-badge-example .example {
+    padding-bottom: 48px;
+    border-bottom: 1px solid #555555;
+}
+.notification-badge-example .badge-with-icon-example {
+    position: relative;
+    display: inline-block;
+    padding: 22px 24px;
+    border: 1px solid #4c4c4c;
+}
+.notification-badge-example .badge-with-icon-example + .badge-with-icon-example {
+    margin-left: 24px;
+}
+.notification-badge-example .navbar-example {
+    height: 500px;
+    border-bottom: 1px solid #555555;
+}
+.notification-badge-example .navbar-example header {
+    padding: 0 24px;
+    padding-right: 0;
+}
+.notification-badge-example .navbar-example .site-header .dropdown-toggle {
+    margin-top: 0;
+}
+.notification-badge-example header .nav > li.dropdown .notification-badge-contianer .tmicon {
+    margin-right: 0;
+}
+.notification-badge-example .status-example {
+    margin-top: 48px;
+    text-align: center;
+}
+.notification-badge-example .no-notification-example {
+    display: inline-block;
+}
+@media screen and (min-width: 1100px) {
+    .notification-badge-example .no-notification-example + .no-notification-example {
+        margin-left: 60px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .notification-badge-example .no-notification-example + .no-notification-example {
+        margin-left: 240px;
+    }
+}
+.notification-badge-example .no-notification-example .badge-with-icon-example {
+    float: right;
+    background: rgba(255, 255, 255, 0.05);
+}
+.notification-badge-example .notification-popup-wrapper {
+    display: block;
+}
+.notification-badge-example .no-notification-example .notification-popup-wrapper {
+    position: relative;
+    float: none;
+    clear: both;
+}
+.notification-badge-example .no-notification-example .notification-popup-wrapper .header {
+    text-align: left;
+}

@@ -1,0 +1,42 @@
+<section class="css-reference">
+  <h5>Icon class</h5>
+  <p>Icon class should only be used on elements that do not contain either text or child elements. We recommend wrapping <code data-tag="span"></code> into a <code data-tag="button"></code> element.</p>
+  <pre data-title="For font-awesome icon">
+    <style data-selector=".btn .tmicon">Leave space between icon and button text</style>
+  </pre>
+  <pre>
+    <style data-selector=".btn-lg.btn .tmicon">Large, small, or extra small size button</style>
+  </pre>
+
+  <pre data-title="For image icon (svg or png)">
+    <style data-selector=".btn .icon">Default size button</style>
+  </pre>
+  <pre>
+    <style data-selector=".btn-lg.btn .icon">Large size button</style>
+  </pre>
+  <pre>
+    <style data-selector=".btn-sm.btn .icon">Small or extra small size button</style>
+  </pre>
+
+  <h5>Buttons with only an icon</h5>
+  <pre data-title="Button class">
+    <style data-selector=".btn.btn-icon-only"></style>
+  </pre>
+  <pre data-title="Icon class">
+    <style data-selector=".btn-icon-only.btn .tmicon"></style>
+  </pre>
+</section>
+
+<section>
+	<h5>Static (default)</h5>
+	<button type="button" class="btn btn-default"><span class="tmicon tmicon-download"></span>Download</button><button type="button" class="btn btn-primary"><span class="tmicon tmicon-add"></span>Add Account</button>
+
+	<h5>Progressing</h5>
+	<button type="button" class="btn btn-default" disabled="disabled"><span class="loader loader-small"></span>Uploading</button><button type="button" class="btn btn-primary" disabled="disabled"><span class="loader loader-small"></span>Uploading</button>
+
+	<h5>Static (flat)</h5>
+	<button type="button" class="btn btn-default btn-border"><span class="tmicon tmicon-settings"></span>Settings</button><button type="button" class="btn btn-default btn-border"><span class="tmicon tmicon-delete"></span>Remove</button><button type="button" class="btn btn-default btn-border"><span class="tmicon tmicon-refresh"></span>Refresh</button>
+
+	<h5>Icons-only</h5>
+	<button type="button" class="btn btn-default btn-icon-only"><span class="tmicon tmicon-comment"></span></button><button type="button" class="btn btn-primary btn-icon-only"><span class="tmicon tmicon-add"></span></button><button type="button" class="btn btn-danger btn-icon-only"><span class="tmicon tmicon-search-o"></span></button><button type="button" class="btn btn-default btn-border btn-icon-only"><span class="tmicon tmicon-settings"></span></button>
+</section>

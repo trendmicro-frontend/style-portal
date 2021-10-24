@@ -1,0 +1,68 @@
+<section class="css-reference">
+  <h5>Search box container with icons</h5>
+  <p>Wrap the input and the icon with a <code data-tag="div"></code> element.</p>
+  <pre>
+    <style data-selector=".input-icon-group"></style>
+  </pre>
+
+  <h5>Input with form controls</h5>
+  <p>Use the <code data-tag="input"></code> element with certainly id attribute. For details on input fields, refer to <a href="#/styles/{{theme}}/{{version}}/206355af-1c26-49d7-b878-d3d6f094990f">Form Elements</a>.</p>
+  <pre>
+    <style data-selector=".input-icon-group > .form-control"></style>
+  </pre>
+  <h5>Icon Wrapper</h5>
+  <p>Use the <code data-tag="label"></code> element with <code data-tag="for"></code> attribute which refer to <code data-tag="input"></code> ID.</p>
+  <pre data-title="Wrap icon into this label element">
+    <style data-selector=".input-icon-label"></style>
+  </pre>
+  <h5>Icon class</h5>
+  <p>The icon class should only be used on elements that do not contain any text or child elements. We recommend wrapping any <code data-tag="span"></code> or <code data-tag="i"></code> element.</p>
+  <pre data-title=":focus">
+    <style data-selector=".input-icon-group > .form-control:focus + .input-icon-label > i"></style>
+  </pre>
+  <pre data-title="For image icon (svg or png): loader and cancel icons">
+    <style data-selector=".input-icon-group .loader"></style>
+  </pre>
+  <h5>Loader icon</h5>
+  <p>Display a small icon to indicate progress. For details on loader styles, refer to <a href="#/styles/{{theme}}/{{version}}/4cd601bb-d7a7-4b4a-8d4d-d087a630929a">Loader</a>.</p>
+  <h5>Cancel icon class</h5>
+  <pre data-title="Icon color and position">
+    <style data-selector=".tmicon-visible-low"></style>
+    <style data-selector=".input-icon-group .tmicon-close-s"></style>
+  </pre>
+  <pre data-title=":hover">
+    <style data-selector=".tmicon-visible-low.tmicon-hoverable:hover"></style>
+  </pre>
+</section>
+
+<section class="search-example">
+  <p>Instant Search allows users to query data without clicking a search button. The system automatically starts the query after users have stop typing a keyword.</p>
+  <p>If displaying the search results may take some time, consider using a loader.</p>
+  <p>When appropriate, include a reset button to clear the search input field and trigger a new search. Only display the reset button when the input field contains a value.</p>
+  <p>For more information, see <a href="http://tw-hiesrv.tw.trendnet.org/uiwww/segment/01_enterprise/ENT_UX_Go/Style%20Portal%20Guidelines/Component%20Interaction%20Design/Search%20Box/html/instant_search.html" target="_blank">Interaction Flowchart</a>.</p>
+  <div>
+    <div class="input-icon-group">
+      <input id="filter" type="text" class="form-control" placeholder="Case name" data-search-box="searchBoxDisplay">
+      <label class="input-icon-label" for="filter">
+        <i class="tmicon tmicon-search-o"></i>
+      </label>
+    </div>
+    <div class="input-icon-group">
+      <input id="filter1" type="text" class="form-control input-focus" value="D" data-search-box="searchBoxDisplay">
+      <label class="input-icon-label" for="filter1">
+        <i class="tmicon tmicon-search-o focus"></i>
+      </label>
+      <span class="loader loader-small"></span>
+    </div>
+    <div class="input-icon-group">
+      <input id="filter2" type="text" class="form-control input-focus" value="DDEI" data-search-box="searchBoxDisplay">
+      <label class="input-icon-label" for="filter2">
+        <i class="tmicon tmicon-search-o focus"></i>
+      </label>
+      <span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable" data-clear-field="clearField"></span>  
+    </div>
+    <div class="example">
+      <input id="searchBox" type="text" class="form-control" placeholder="Case name" data-search-field="searchBox">
+    </div>
+  </div>
+</section>

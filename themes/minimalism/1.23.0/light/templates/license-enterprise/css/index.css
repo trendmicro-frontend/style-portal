@@ -1,0 +1,160 @@
+body {
+	background: #ffffff;
+	left: 0;
+	right: 0;
+	height: 100%;
+	position: absolute;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.container-fluid {
+  padding: 0 16px;
+}
+header.site-header {
+  padding: 0 24px;
+  padding-right: 0;
+}
+.site-header {
+	position: relative;
+	padding: 0 20px;
+	height: 64px;
+	margin-bottom: 0;
+	background-color: #fff;
+	border-bottom: 1px #ddd solid;
+}
+.navbar {
+  padding: 0;
+}
+.site-header a:link,
+.site-header a:hover,
+.site-header a:active,
+.site-header a:visited,
+.site-header a:focus {
+	color: #222;
+}
+.site-header .banner {
+	background: url(../images/tball.svg) center left no-repeat;
+	background-size: 32px;
+	float: left;
+	height: 63px;
+	padding: 0;
+}
+.site-header .banner,
+.site-header .banner :hover {
+	text-decoration: none;
+	cursor: default;
+}
+.site-title {
+	margin: 14px 0 0 42px;
+	line-height: 36px;
+	font-family: "Interstate-Light", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 26px;
+	font-weight: 200;
+	letter-spacing: -0.03em;
+	white-space: nowrap;
+}
+.site-header .dropdown-toggle {
+  margin-top: 0;
+}
+.affix + .breadcrumb {
+	padding-top: 40px;
+}
+.breadcrumb {
+	background: #fff;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.breadcrumb.with-line {
+  margin-bottom: 0;
+}
+.breadcrumb > li + li.non-breadcrumb-item {
+  float: right;
+}
+.breadcrumb > li + li.non-breadcrumb-item:before {
+  content: none;
+}
+.breadcrumb > li + li.non-breadcrumb-item .tmicon-help-o {
+	margin: 2px 0;
+	vertical-align: top;
+	cursor: pointer;
+}
+.panel {
+	margin-bottom: 0;
+	border: 1px solid #dddddd;
+}
+.panel + .panel {
+  margin-top: 20px;
+}
+.renewal-content {
+	padding: 8px 0;
+	text-align: right;
+}
+.license-title {
+	font-size: 14px;
+	font-weight: bold;
+}
+.license-meta {
+	display: table;
+	margin-top: 12px;
+	margin-bottom: -12px;
+	border-collapse: separate;
+	border-spacing: 0 12px;
+}
+.license-field {
+	display: table-row;
+}
+.license-meta-label {
+	display: table-cell;
+}
+.license-meta-value {
+	display: table-cell;
+	padding-left: 24px;
+}
+.license-meta-value > span {
+	display: inline-block;
+	line-height: 20px;
+}
+.license-field.button-field > .license-meta-label,
+.license-field.button-field > .license-meta-value > span {
+	vertical-align: middle;
+}
+.license-meta-value .btn {
+	margin-left: 8px;
+}
+.status {
+	padding-right: 12px;
+}
+.status + .status {
+	padding-left: 12px;
+}
+.status.detail {
+	border-left: 1px solid #dddddd; 
+}
+.tmicon-success,
+.tmicon-error {
+	margin-right: 8px;
+}
+.form-horizontal .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+@media (min-width: 768px) {
+	.form-horizontal .form-group .control-label {
+		width: 150px;
+	}
+	.form-horizontal .form-group .control-wrapper {
+		width: 512px;
+	}
+}
+.modal-lg .modal-body {
+	padding: 0;
+	overflow: hidden;
+}
+.modal-lg .form-horizontal {
+	padding: 16px 24px 24px 24px;
+}

@@ -1,0 +1,87 @@
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  text-indent: -9999em;
+  vertical-align: top;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-left-color: #ffffff;
+  transform: translateZ(0);
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+.loader-small {
+  width: 16px;
+  height: 16px;
+}
+.loader-large {
+  width: 56px;
+  height: 56px;
+}
+.btn .loader {
+  margin-top: 2px;
+  margin-right: 8px;
+}
+.btn.btn-icon-only .loader {
+  margin-right: 0;
+}
+.loader-label.loader-label-inline .loader {
+  float: left;
+  margin-top: 2px;
+  margin-right: 8px;
+}
+.loader-label.loader-label-block {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.loader-label.loader-label-block .label-text {
+  display: block;
+  margin-top: 8px;
+  color: #888888;
+}
+.loader-label .label-text {
+  display: inline-block;
+  line-height: 20px;
+}
+.loader-overlay {
+  background-color: rgba(51, 51, 51, 0.8);
+  cursor: wait;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.loader-overlay .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.loader-overlay .loader {
+  margin-top: -16px;
+  margin-left: -16px;
+}
+.loader-overlay .loader-small {
+  margin-top: -8px;
+  margin-left: -8px;
+}
+.loader-overlay .loader-large {
+  margin-top: -28px;
+  margin-left: -28px;
+}
+.loader-overlay .loader-label .loader {
+  position: static;
+  margin: 0;
+}

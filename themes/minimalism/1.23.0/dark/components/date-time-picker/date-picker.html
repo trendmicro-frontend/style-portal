@@ -1,0 +1,100 @@
+<section class="css-reference">
+  <h5>Datepicker wrapper</h5>
+  <p>Wrap the date input and datepicker dropdown within a <code data-tag="div"></code> element.</p>
+  <pre>
+    <style data-selector=".datepicker-wrapper"></style>
+  </pre>
+
+  <h5>Date inputs</h5>
+  <p>About the inputs style and state, please refer to <a href="#/styles/{{theme}}/{{version}}/206355af-1c26-49d7-b878-d3d6f094990f">Form Elements</a>. About the input with icon style, please refer to <a href="#/styles/{{theme}}/{{version}}/4ec8071d-3dc0-4c63-90d7-9b41cb87a423">Input Groups</a>.</p>
+  <pre data-title="Date inputs field width">
+    <style data-selector=".input-width-xs"></style>
+  </pre>
+
+  <h5>Datepicker dropdown</h5>
+  <p>Extend the dropdown menu class to define datepicker dropdown.</p>
+  <pre>
+    <style data-selector=".datepicker"></style>
+  </pre>
+
+  <h5>Datepicker container</h5>
+  <p>A datepicker container can created with a <code data-tag="table"></code></p>
+  <pre>
+    <style data-selector=".datepicker table"></style>
+  </pre>
+
+  <h5>Datepicker-months, datepicker-years container</h5>
+  <pre>
+    <style data-selector=".datepicker div.datepicker-months table"></style>
+  </pre>
+
+  <h5>Datepicker block</h5>
+  <p>A datepicker block can created with a <code data-tag="td"></code>, <code data-tag="th"></code> element.</p>
+  <pre>
+    <style data-selector=".datepicker table td"></style>
+  </pre>
+  <pre data-title="Being hovered on dates">
+    <style data-selector=".datepicker table tr td.day:hover"></style>
+  </pre>
+  <pre data-title="Not current month dates">
+    <style data-selector=".datepicker table tr td.old"></style>
+  </pre>
+  <pre data-title="Today">
+    <style data-selector=".datepicker table tr td.today"></style>
+  </pre>
+  <pre data-title="Selected date">
+    <style data-selector=".datepicker table tr td.active"></style>
+  </pre>
+  <pre data-title="The month/year header cells">
+    <style data-selector=".datepicker table th.switch">Colspan attribute on the element is needed</style>
+  </pre>
+  <pre data-title="Width of the month/year header cells">
+    <style data-selector=".datepicker div.datepicker-months th.switch"></style>
+  </pre>
+  <pre data-title="Being hovered the month/year header cells">
+    <style data-selector=".datepicker thead tr:first-child th:hover"></style>
+  </pre>
+  <pre data-title="The week header cells">
+    <style data-selector=".datepicker .dow"></style>
+  </pre>
+
+  <h5>Datepicker-months, datepicker-years block</h5>
+  <pre>
+    <style data-selector=".datepicker div.datepicker-months tbody > tr > td"></style>
+  </pre>
+
+  <h5>Datepicker-months, datepicker-years</h5>
+  <p>A datepicker-months, datepicker-years block can created with a <code data-tag="span"></code> element within <code data-tag="td"></code>.</p>
+  <pre>
+    <style data-selector=".datepicker table tr td span"></style>
+  </pre>
+  <pre>
+    <style data-selector=".datepicker table tr td span.old">The years not in the range</style>
+  </pre>
+  <pre data-title=":hover">
+    <style data-selector=".datepicker table tr td span:hover"></style>
+  </pre>
+  <pre data-title="Selected">
+    <style data-selector=".datepicker table tr td span.active"></style>
+  </pre>
+</section>
+
+<section class="date-time-picker-example">
+	<p>The date picker contains the date input field and the calender view. Users can either use the input field to type a date or by selecting a date in the calendar.</p>
+  <ul class="description">
+    <li>Click the input field to open the calendar dropdown.</li>
+    <li>Click the arrows to view the previous and next days, months, or years.</li>
+    <li>Click a certain month (or year) to show all the days (or months) of that month (or year).</li>
+    <li>A selected date is marked with a red circle and the numeral of the current date is shown in red.</li>
+    <li>If no default date is selected, show a placeholder help text to indicate the date format.</li>
+    <li>As soon as a date is selected, the calendar closes itself and the selected date is shown in the input field.</li>
+    <li>As soon as a date is typed, the date is also circled on the calendar.</li>
+    <li>Support selecting using keyboards.</li>
+    <li>Date formats may be adjusted as required. For detailed information about different date format variations, see <a href="https://wiki.jarvis.trendmicro.com/pages/viewpage.action?pageId=256030120" target="_blank">Date & Time</a>.</li>
+  </ul>
+
+  <p>For detailed information, see <a href="https://wiki.jarvis.trendmicro.com/pages/viewpage.action?pageId=261109313" target="_blank">Date Picker</a>.</p>
+
+  <h5>Date input field</h5>
+  <input id="datepicker-input" type="text" class="form-control input-width-xs">
+</section>

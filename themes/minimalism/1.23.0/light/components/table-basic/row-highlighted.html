@@ -1,0 +1,63 @@
+<section class="css-reference">
+	<h5>CSS3 fade-in and fade-out</h5>
+	<p>The animations are created using CSS3 keygrames.</p>
+	<pre data-title="Fade-in">
+		<style data-keyframes="table-row-fadein"></style>
+	</pre>
+	<pre data-title="Fade-out">
+		<style data-keyframes="table-row-fadeout"></style>
+	</pre>
+
+	<h5>Table rows</h5>
+	<p>Enable CSS animations to the table row that requires attention from users.</p>
+	<pre>
+		<style data-selector=".table-highlightable > tbody > .highlight"></style>
+	</pre>
+</section>
+
+<section class="tables-highlight-rows-example">
+	<p>
+		To indicate that a row requires attention from users, change the background color to highlight a row.
+	</p>
+
+	<div class="example">
+		<div style="margin-bottom: 10px;">
+			<button id="highlight-rows-insert-btn" type="button" class="btn btn-default">Highlight Table Row</button><button id="highlight-rows-reset-btn" type="button" class="btn btn-default" disabled>Reset</button>
+		</div>
+
+		<table id="highlight-rows-table" class="table table-bordered table-hover table-highlightable">
+			<thead>
+				<tr>
+					<th>Deployment Plan</th>
+					<th>Type</th>
+					<th>Appliance</th>
+					<th>Deployed</th>
+					<th>Creator</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="static">
+					<td>Hotfix_DDEI</td>
+					<td>Hotfix</td>
+					<td>8</td>
+					<td>2016-06-02 23:15:00</td>
+					<td>Administrator</td>
+				</tr>
+				<tr class="static">
+					<td>Hotfix_DDI_01</td>
+					<td>Virtual Analyzer image</td>
+					<td>12</td>
+					<td>2016-04-18 23:17:20</td>
+					<td>Administrator</td>
+				</tr>
+				<tr class="static">
+					<td>TW_Patch_01_DDI</td>
+					<td>Firmware</td>
+					<td>29</td>
+					<td>2016-04-17 21:20:18</td>
+					<td>Operator</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>

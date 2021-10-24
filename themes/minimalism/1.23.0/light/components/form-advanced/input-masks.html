@@ -1,0 +1,42 @@
+<section class="css-reference">
+  <h5>Date and time input masks</h5>
+  <p>Date and time input masks format and validate inputs as the user types along.</p>
+
+  <h5>Activation input mask</h5>
+  <p>This mask is there to ensure that the user types activation codes in the predefined format.</p>
+</section>
+
+<section class="form-advanced-example">
+  <p>An input mask is used to format and validate user input as it is typed in.</p>
+
+	<form class="form-horizontal" action="javascript:void(0)">
+	  <div class="form-group">
+	    <label class="control-label" for="phoneInput">Phone:</label>
+	    <div class="control-wrapper">
+	    	<input type="text" class="form-control" id="phoneInput" aria-describedby="phoneBlock" data-input-mask="phone">
+	    	<span id="phoneBlock" class="help-block">Example: (00)-0000-0000</span>
+    	</div>
+		</div>
+		<div class="form-group">
+	    <label class="control-label" for="mobilePhoneInput">Mobile phone:</label>
+	    <div class="control-wrapper">
+	    	<input type="text" class="form-control" id="mobilePhoneInput" aria-describedby="mobilePhoneBlock" data-input-mask="mobilePhone">
+	    	<span id="mobilePhoneBlock" class="help-block">Example: 0000-000-000</span>
+    	</div>
+		</div>
+		<div class="form-group">
+	    <label class="control-label" for="macAddressInput">MAC address:</label>
+	    <div class="control-wrapper">
+	    	<input type="text" class="form-control" id="macAddressInput" aria-describedby="macAddressBlock" data-input-mask="macAddress">
+	    	<span id="macAddressBlock" class="help-block">Example: 00:00:00:00:00:00</span>
+    	</div>
+		</div>
+		<div class="form-group">
+	    <label class="control-label" for="activationInput">Activation code:</label>
+	    <div class="control-wrapper">
+	    	<input type="text" class="form-control" id="activationInput" aria-describedby="activationBlock" data-input-mask="activation">
+	    	<span id="activationBlock" class="help-block">Example: AAA-AAAA-AAAA-AAAA</span>
+    	</div>
+	  </div>
+	</form>
+</section>

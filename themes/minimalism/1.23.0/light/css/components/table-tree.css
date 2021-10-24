@@ -1,0 +1,79 @@
+.table-tree .table-row-expand-btn,
+.table-tree .table-row-expand-btn + .tmicon,
+.table-tree .table-row-expand-btn + span,
+.table-tree .table-row-checkbox,
+.table-tree .table-row-checkbox + .tmicon,
+.table-tree .table-row-checkbox + .tmicon + span {
+  float: left;
+}
+.table-tree .btn-table-row-action {
+  width: 16px;
+  height: 20px;
+  vertical-align: top;
+}
+.table-tree .btn-table-row-action .table-row-expand-icon {
+  transform-origin: center;
+  transition: transform .25s ease;
+}
+.table-tree .btn-table-row-action,
+.table-tree .table-row-checkbox ~ .tmicon {
+  margin-right: 8px;
+}
+.table-tree .table-row-checkbox {
+  display: inline-block;
+  padding: 0 1px;
+}
+.table-tree .table-tree-row-exandable.table-tree-row-lv-1 > td:first-child {
+  padding-left: 12px;
+}
+.table-tree .table-tree-row-lv-1:not(.table-tree-row-exandable) > td:first-child {
+  padding-left: 36px;
+}
+.table-tree .table-tree-row-exandable.table-tree-row-lv-2 > td:first-child {
+  padding-left: 36px;
+}
+.table-tree .table-tree-row-lv-2:not(.table-tree-row-exandable) > td:first-child {
+  padding-left: 60px;
+}
+.table-tree .table-tree-row-exandable.table-tree-row-lv-3 > td:first-child {
+  padding-left: 60px;
+}
+.table-tree .table-tree-row-lv-3:not(.table-tree-row-exandable) > td:first-child {
+  padding-left: 84px;
+}
+.table-tree .table-tree-row-exandable.table-tree-row-lv-4 > td:first-child {
+  padding-left: 84px;
+}
+.table-tree .table-tree-row-lv-4:not(.table-tree-row-exandable) > td:first-child {
+  padding-left: 108px;
+}
+.table-tree .table-tree-row-exandable.table-tree-row-lv-5 > td:first-child {
+  padding-left: 108px;
+}
+.table-tree .table-tree-row-lv-5:not(.table-tree-row-exandable) > td:first-child {
+  padding-left: 132px;
+}
+.table-tree .table-tree-row-exandable.table-tree-row-lv-6 > td:first-child {
+  padding-left: 132px;
+}
+.table-tree .table-tree-row-lv-6:not(.table-tree-row-exandable) > td:first-child {
+  padding-left: 156px;
+}
+.table-tree .tmicon-color-folder {
+  color: #f5c217;
+}
+.table-tree .tmicon-folder {
+  display: inline-block;
+}
+.table-tree .tmicon-folder-open {
+  display: none;
+}
+.table-tree .table-tree-row-expanded .btn-table-row-action .table-row-expand-icon {
+  transform: rotateZ(90deg);
+}
+.table-tree .table-tree-row-expanded .tmicon-folder {
+  display: none;
+}
+.table-tree .table-tree-row-expanded .tmicon-folder-open {
+  display: inline-block;
+}

@@ -1,0 +1,88 @@
+<section class="css-reference">
+  <h5>Search container</h5>
+  <p>Use a <code data-tag="div"></code> element to create a container that wraps the input and the button. For example, <code>.input-group</code> is used as a search container in Bootstrap.</p>
+  <pre>
+    <style data-selector=".input-group"></style>
+  </pre>
+
+  <h5>Container for input with an icon</h5>
+  <pre>
+    <style data-selector=".input-icon-group"></style>
+    <style data-selector=".input-group .input-icon-group"></style>
+  </pre>
+  <h5>Input with form control</h5>
+  <p>For details on styles and statuses of inputs, refer to <a href="#/styles/{{theme}}/{{version}}/206355af-1c26-49d7-b878-d3d6f094990f">Form Elements</a>.</p>
+  <pre>
+    <style data-selector=".input-group .form-control"></style>
+  </pre>
+  <pre data-title=":focus">
+    <style data-selector=".input-group .form-control:focus"></style>
+  </pre>
+  <pre data-title=":first-child">
+    <style data-selector=".input-group .form-control:first-child"></style>
+  </pre>
+  <pre data-title="Input with cancel icon">
+    <style data-selector=".input-group .input-icon-group > .form-control"></style>
+  </pre>
+  <h5>Cancel icon</h5>
+  <pre>
+    <style data-selector=".input-group .input-icon-group > .tmicon-close-s">Icon stack order</style>
+  </pre>
+  <h5>Search button container</h5>
+  <pre>
+    <style data-selector=".input-group-btn">Use span element to wrap the button</style>
+  </pre>
+  <h5>Search button</h5>
+  <p>For details on button styles, refer to <a href="#/styles/{{theme}}/{{version}}/e5bd7778-d707-420b-ac64-4a55da161b83">Buttons</a>.</p>
+  <pre data-title="Button Class">
+    <style data-selector=".input-group-btn > .btn"></style>
+  </pre>
+  <pre data-title=":last-child">
+    <style data-selector=".input-group-btn:last-child > .btn">Negative margin to only have a 1px border between the two</style>
+  </pre>
+  <pre data-title=":focus :active">
+    <style data-selector=".input-group-btn > .btn:focus"></style>
+  </pre>
+</section>
+
+<section class="search-example">
+  <p>Regular Search allows users to query data by doing one of the following actions:</p>
+  <ul class="description">
+		<li>Click the search button</li>
+    <li>Click the reset button</li>
+    <li>Press "Enter" on the keyboard</li>
+  </ul>
+  <p>It is recommended to use the default button style for the search button. You may also use the primary or emphasis style.</p>
+  <p>You can include a reset button to clear the search input field and trigger a new search. Only display the reset button when the input field contains a value.</p>
+  <p>For more information, see <a href="http://tw-hiesrv.tw.trendnet.org/uiwww/segment/01_enterprise/ENT_UX_Go/Style%20Portal%20Guidelines/Component%20Interaction%20Design/Search%20Box/html/regular_search.html" target="_blank">Interaction Flowchart</a>.</p>
+	<div>
+    <div class="input-group">
+      <div class="input-icon-group">
+        <input type="text" class="form-control" data-search-box="searchBoxDisplay">
+      </div>
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default btn-icon-only"><span class="tmicon tmicon-search-o"></span></button>
+      </span>
+    </div>
+    <div class="input-group">
+      <div class="input-icon-group">
+        <input type="text" class="form-control input-focus" value="DDEI" data-search-box="searchBoxDisplay">
+        <span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span>
+      </div>
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default btn-icon-only"><span class="tmicon tmicon-search-o"></span></button>
+      </span>
+    </div>
+    <div class="example">
+      <div class="input-group">
+        <div class="input-icon-group" data-search-box="searchBox">
+          <input type="text" class="form-control">
+          <span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span>
+        </div>
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default btn-icon-only"><span class="tmicon tmicon-search-o"></span></button>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

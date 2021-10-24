@@ -1,0 +1,127 @@
+<section class="css-reference">
+  <h5>Search container</h5>
+  <p>Use a <code data-tag="div"></code> element to create a container that wraps the input and the button. For example, <code>.input-group</code> is used as a search container in Bootstrap.</p>
+  <pre>
+    <style data-selector=".input-group"></style>
+  </pre>
+  <h5>Drop-down container</h5>
+  <p>Use a <code data-tag="span"></code> element to wrap the drop-down container.</p>
+  <pre>
+    <style data-selector=".input-group-btn">Use span element to wrap the dropdowns</style>
+  </pre>
+  <h5>Drop-down toggle</h5>
+  <p>For details on drop-down toggle styles, refer to <a href="#/styles/{{theme}}/{{version}}/c30559fc-1076-4d01-a05a-ea5ef0b20f69">Drop-downs</a>.</p>
+  <pre>
+    <style data-selector=".input-group-btn > .btn"></style>
+    <style data-selector=".input-group-btn:first-child > .dropdown-toggle">Negative margin to only have a 1px border between the two</style>
+  </pre>
+  <pre data-title="Dropdown Caret">
+    <style data-selector=".input-group-btn .dropdown-toggle .tmicon-caret-down">Put the caret icon behind the text</style>
+  </pre>
+  <h5>Drop-down menus</h5>
+  <p>For details on drop-down menu styles, refer to <a href="#/styles/{{theme}}/{{version}}/c30559fc-1076-4d01-a05a-ea5ef0b20f69">Drop-downs</a>.</p>
+  <h5>Container for input with an icon</h5>
+  <pre>
+    <style data-selector=".input-icon-group"></style>
+    <style data-selector=".input-group .input-icon-group"></style>
+    <style data-selector=".input-group .input-icon-group:not(:first-child):not(:last-child)"></style>
+  </pre>
+  <h5>Input with form control</h5>
+  <p>For details on styles and statuses of inputs, refer to <a href="#/styles/{{theme}}/{{version}}/206355af-1c26-49d7-b878-d3d6f094990f">Form Elements</a>.</p>
+  <pre>
+    <style data-selector=".input-group .form-control"></style>
+  </pre>
+  <pre data-title=":focus">
+    <style data-selector=".input-group .form-control:focus"></style>
+  </pre>
+  <pre data-title=":not(:first-child):not(:last-child)">
+    <style data-selector=".input-group .input-icon-group:not(:first-child):not(:last-child) .form-control"></style>
+  </pre>
+  <pre data-title="Input with cancel icon">
+    <style data-selector=".input-group .input-icon-group > .form-control"></style>
+  </pre>
+  <h5>Cancel icon</h5>
+  <pre>
+    <style data-selector=".input-group .input-icon-group > .tmicon-close-s">Icon stack order</style>
+  </pre>
+  <h5>Search button container</h5>
+  <pre>
+    <style data-selector=".input-group-btn">Use span element to wrap the button</style>
+  </pre>
+  <h5>Search button</h5>
+  <p>For details on button styles, refer to <a href="#/styles/{{theme}}/{{version}}/e5bd7778-d707-420b-ac64-4a55da161b83">Buttons</a>.</p>
+  <pre data-title="Button Class">
+    <style data-selector=".input-group-btn > .btn"></style>
+  </pre>
+  <pre data-title=":last-child">
+    <style data-selector=".input-group-btn:last-child > .btn">Negative margin to only have a 1px border between the two</style>
+  </pre>
+  <pre data-title=":focus :active">
+    <style data-selector=".input-group-btn > .btn:focus"></style>
+  </pre>
+</section>
+
+<section class="search-example">
+  <p>Scoped Search combines a drop-down menu with Regular Search to limit the search within the selected category.</p>
+  <p>For more information, see <a href="http://tw-hiesrv.tw.trendnet.org/uiwww/segment/01_enterprise/ENT_UX_Go/Style%20Portal%20Guidelines/Component%20Interaction%20Design/Search%20Box/html/scoped_search.html" target="_blank">Interaction Flowchart</a>.</p>
+  <div>
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button class="btn btn-border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+          	Host name<span class="tmicon tmicon-caret-down"></span>
+        </button>
+      	<ul class="dropdown-menu">
+          <li><a href="javascript:;">Host name</a></li>
+          <li><a href="javascript:;">IP address</a></li>
+          <li><a href="javascript:;">Asset tag</a></li>
+      	</ul>
+  	  </div>
+      <div class="input-icon-group">
+        <input type="text" class="form-control" data-search-box="searchBoxDisplay">
+      </div>
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default btn-icon-only"><span class="tmicon tmicon-search-o"></span></button>
+      </span>
+    </div>
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button class="btn btn-border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+          	Host name<span class="tmicon tmicon-caret-down"></span>
+        </button>
+      	<ul class="dropdown-menu">
+          <li><a href="javascript:;">Host name</a></li>
+          <li><a href="javascript:;">IP address</a></li>
+          <li><a href="javascript:;">Asset tag</a></li>
+      	</ul>
+  	  </div>
+    	<div class="input-icon-group">
+        <input type="text" class="form-control input-focus" value="DDEI" data-search-box="searchBoxDisplay">
+        <span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span>
+      </div>
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default btn-icon-only"><span class="tmicon tmicon-search-o"></span></button>
+      </span>
+    </div>
+    <div class="example">
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button class="btn btn-border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
+              Host name<span class="tmicon tmicon-caret-down"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:;">Host name</a></li>
+            <li><a href="javascript:;">IP address</a></li>
+            <li><a href="javascript:;">Asset tag</a></li>
+          </ul>
+        </div>
+        <div class="input-icon-group" data-search-box="searchBox">
+          <input type="text" class="form-control">
+          <span class="tmicon tmicon-close-s tmicon-visible-low tmicon-hoverable"></span>
+        </div>
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default btn-icon-only"><span class="tmicon tmicon-search-o"></span></button>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

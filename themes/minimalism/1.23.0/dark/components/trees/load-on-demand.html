@@ -1,0 +1,180 @@
+<section class="css-reference">
+  <h5>Loaders</h5>
+  <pre>
+    <style data-selector=".tree-node-expand-button .loader"></style>
+  </pre>
+
+  <pre data-title="When loading child nodes">
+    <style data-selector=".tree-node-loading > .tree-node-label > .tree-node-expand-button > .tree-node-loader"></style>
+  </pre>
+
+  <h5>Caret icons</h5>
+  <pre data-title="When loading child nodes">
+    <style data-selector=".tree-node-loading > .tree-node-label > .tree-node-expand-button > .tree-node-expand-icon"></style>
+  </pre>
+</section>
+
+<section>
+  <p>When displaying the tree view with a large data set, it may take some time to display the info. Consider using a loader when a user expands branches in the tree.</p>
+
+  <div class="tree" data-async="true" style="width: 320px;" role="tree">
+    <div class="tree-nodes tree-nodes-level-1" role="group">
+      <div class="tree-node tree-node-expandable" data-level="1">
+        <div class="tree-node-label">
+          <button class="tree-node-expand-button">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+            <span class="loader loader-small tree-node-loader"></span>
+          </button>
+
+          <span class="tree-node-text">Group 1</span>
+        </div>
+
+        <div class="tree-nodes tree-nodes-level-2" role="group">
+          <div class="tree-node tree-node-expandable" data-level="2">
+            <div class="tree-node-label">
+              <button class="tree-node-expand-button">
+                <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                <span class="loader loader-small tree-node-loader"></span>
+              </button>
+
+              <span class="tree-node-text">Asia</span>
+            </div>
+
+            <div class="tree-nodes tree-nodes-level-3" role="group">
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                    <span class="loader loader-small tree-node-loader"></span>
+                  </button>
+
+                  <span class="tree-node-text">Taiwan</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Taipei</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Taichung</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">Repo-Kaohsiung</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                    <span class="loader loader-small tree-node-loader"></span>
+                  </button>
+
+                  <span class="tree-node-text">Janpan</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Tokyo</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Okinawa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node" data-level="3">
+                <div class="tree-node-label">
+                  <span class="tree-node-text">Master01-Singapore</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree-node tree-node-expandable" data-level="2">
+            <div class="tree-node-label">
+              <button class="tree-node-expand-button">
+                <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                <span class="loader loader-small tree-node-loader"></span>
+              </button>
+
+              <span class="tree-node-text">Europe</span>
+            </div>
+
+            <div class="tree-nodes tree-nodes-level-3" role="group">
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                    <span class="loader loader-small tree-node-loader"></span>
+                  </button>
+
+                  <span class="tree-node-text">Germany</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Berlin</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Munich</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node tree-node-expandable" data-level="3">
+                <div class="tree-node-label">
+                  <button class="tree-node-expand-button">
+                    <span class="tmicon tmicon-caret-right tmicon-hoverable tree-node-expand-icon"></span>
+                    <span class="loader loader-small tree-node-loader"></span>
+                  </button>
+
+                  <span class="tree-node-text">Spain</span>
+                </div>
+
+                <div class="tree-nodes tree-nodes-level-4" role="group">
+                  <div class="tree-node" data-level="4">
+                    <div class="tree-node-label">
+                      <span class="tree-node-text">DDI-Madrid</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tree-node" data-level="3">
+                <div class="tree-node-label">
+                  <span class="tree-node-text">DDI-Italy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tree-node" data-level="1">
+        <div class="tree-node-label">
+          <span class="tree-node-text">Group 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

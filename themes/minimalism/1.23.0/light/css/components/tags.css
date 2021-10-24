@@ -1,0 +1,138 @@
+.tokenfield {
+  padding: 0 4px 3px 4px;
+  border: 1px solid #cccccc;
+  cursor: text;
+}
+.tokenfield.form-invalid {
+  border-color: #db3d44;
+}
+.tokenfield.focus {
+  border-color: #0096cc;
+  transition: all 0.2s linear 0s;
+  outline: none;
+}
+.tokenfield .token {
+  border-radius: 3px;
+  display: inline-block;
+  background-color: #cceaf5;
+  white-space: nowrap;
+  margin: 3px 4px 0 0;
+  cursor: default;
+  vertical-align: top;
+}
+.tokenfield .token.token-invalid {
+  background-color: #f8dcdd;
+}
+.tokenfield .token.token-invalid.active {
+  background-color: #f3c0c3;
+}
+.tokenfield .token.active {
+  background-color: #99d5eb;
+}
+.tokenfield .token .token-label {
+  display: inline-block;
+  padding: 2px 2px 2px 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 3px 0 0 3px;
+  max-width: 184px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  color: #222222;
+  vertical-align: top;
+}
+.tokenfield .token .tmicon.tmicon-close-s {
+  font-size: 14px;
+}
+.tokenfield .token .tmicon.tmicon-close-s:focus {
+  color: #222222;
+  opacity: 1;
+}
+.tokenfield .token .tmicon-close-s {
+  display: inline-block;
+  float: none;
+  margin-top: 2px;
+  margin-right: 8px;
+  text-decoration: none;
+}
+.tokenfield .token-input {
+  background: none;
+  max-width: 184px;
+  border: 0;
+  padding: 0;
+  margin-top: 3px;
+  font-size: 12px;
+  height: 24px;
+}
+.tokenfield .token-input.placeholder {
+  margin-left: 8px;
+}
+.tokenfield .token-input:focus {
+  border-color: transparent;
+  outline: 0;
+}
+.tokenfield > input[type="text"]:focus {
+  transition-property: none;
+}
+.tokenfield.editable .token:hover,
+.tokenfield.editable .token.hover {
+  background-color: #e6f4fc;
+  cursor: pointer;
+}
+.tokenfield.editable .token .token-label {
+  color: #0096cc;
+}
+.tokenfield.editable .token-invalid:hover,
+.tokenfield.editable .token-invalid.hover {
+  background-color: #fde8e9;
+  cursor: pointer;
+}
+.tokenfield.autocomplete {
+  position: relative;
+  padding-right: 48px;
+}
+.tokenfield.autocomplete > .tmicon-close-s {
+  position: absolute;
+  right: 24px;
+  top: 0;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.tokenfield.autocomplete:after {
+  content: " ";
+  background: url(../images/icon/selectCaretDown.svg) no-repeat;
+  background-position: left 6px;
+  width: 24px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.ui-autocomplete.dropdown-menu .ui-menu-item-wrapper {
+  display: block;
+  padding: 4px 16px;
+  clear: both;
+  font-weight: normal;
+  line-height: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ui-autocomplete.dropdown-menu .ui-menu-item-wrapper.ui-state-active {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.ui-autocomplete.dropdown-menu .ui-menu-item-wrapper .matched {
+  color: #0096cc;
+  font-weight: 700;
+}
+.ui-autocomplete.dropdown-menu.no-match .ui-menu-item-wrapper,
+.ui-autocomplete.dropdown-menu.no-match .ui-menu-item-wrapper.ui-state-active {
+  cursor: text;
+  background-color: #ffffff;
+  color: #999999;
+}
+.ui-helper-hidden-accessible {
+  display: none;
+}

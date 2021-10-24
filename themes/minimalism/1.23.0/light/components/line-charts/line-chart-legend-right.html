@@ -1,0 +1,33 @@
+<section class="css-reference">
+  <h5>Line chart wrapper</h5>
+  <p>Use a block-level element to wrap the chart and the legends.</p>
+  <pre>
+    <style data-selector=".legend-vertical-container"></style>
+  </pre>
+  <h5>Chart wrapper</h5>
+  <pre>
+     <style data-selector=".legend-vertical-container .chart-container"></style>
+  </pre>
+  <h5>Vertical legend wrapper</h5>
+  <pre>
+     <style data-selector=".legend-vertical">Determine the height according to product requirements.</style>
+  </pre>
+  <h5>Vertical legend container</h5>
+  <p>Wrap all vertical legends with a <code data-tag="ul"></code> element.</p>
+  <pre>
+     <style data-selector=".legend-vertical ul"></style>
+  </pre>
+  <h5>Vertical legend</h5>
+  <p>Use <code data-tag="li"></code> for each vertical legend under the <code data-tag="ul"></code> element.</p>
+  <pre>
+     <style data-selector=".legend-vertical ul li"></style>
+  </pre>
+</section>
+
+<section class="line-charts-example legend-vertical-container">
+	<div id="line-legend-right-container" class="chart-container line-chart-container-plain"></div>
+	<section class="legend legend-vertical">
+        <ul></ul>
+    </section>
+    <div class="legend-page"><i class="tmicon tmicon-caret-up"></i><span class="now"></span> / <span class="total"></span><i class="tmicon tmicon-caret-down"></i></div>
+</section>

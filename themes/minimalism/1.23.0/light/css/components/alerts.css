@@ -1,0 +1,66 @@
+.alert {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  color: #222222;
+  padding: 8px 40px 8px 48px;
+  border-radius: 0;
+}
+.alert > .cancel {
+  float: right;
+  margin-right: -24px;
+}
+.alert > .tmicon:first-of-type {
+  color: #444444;
+  float: left;
+  margin-left: -24px;
+}
+.alert a {
+  text-decoration: none;
+}
+.alert a:hover,
+.alert a:focus {
+  text-decoration: underline;
+}
+.alert + .alert {
+  margin-top: 1px;
+}
+.alert .btn-xs {
+  margin-left: 12px;
+}
+.toast-alert {
+  position: fixed;
+  padding: 8px 36px 8px 40px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  min-width: 280px;
+  max-width: 680px;
+}
+.modal-lg .toast-alert {
+  min-width: 280px;
+  max-width: 680px;
+}
+.modal-md .toast-alert,
+.modal-sm .toast-alert,
+.modal-xs .toast-alert {
+  min-width: 280px;
+  max-width: 80%;
+}
+.toast-alert-top {
+  top: 8px;
+}
+.alert-success {
+  background-color: #dbf5e7;
+  border: 1px solid #c4ebd6;
+}
+.alert-info {
+  background-color: #cceaf5;
+  border: 1px solid #99d5eb;
+}
+.alert-warning {
+  background-color: #fdf0c3;
+  border: 1px solid #fcd963;
+}
+.alert-danger {
+  background-color: #f8dcdd;
+  border: 1px solid #f3c0c3;
+}

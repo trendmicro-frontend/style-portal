@@ -1,0 +1,43 @@
+.file-info-container {
+  padding-left: 12px;
+  float: right;
+  line-height: 32px;
+}
+.file-info-container .file-size {
+  color: #888888;
+  font-size: 12px;
+}
+.file-info-container .tmicon-close-s {
+  margin-left: 2px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+.multiple-file-info {
+  margin-top: 8px;
+  min-width: 280px;
+  max-width: 360px;
+  padding: 0;
+}
+.multiple-file-info > li {
+  position: relative;
+  display: block;
+  padding: 8px 52px 8px 16px;
+  border: 1px solid #dddddd;
+  background-color: #f8f8f8;
+}
+.multiple-file-info > li + li {
+  border-top: 0;
+}
+.multiple-file-info .file-name {
+  word-wrap: break-word;
+}
+.multiple-file-info .file-size {
+  color: #888888;
+  font-size: 12px;
+}
+.multiple-file-info .tmicon-close-s {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;
+}

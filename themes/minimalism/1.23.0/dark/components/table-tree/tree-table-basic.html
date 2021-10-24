@@ -1,0 +1,201 @@
+<section class="css-reference">
+  <h5>First column cells</h5>
+  <pre data-title="For exandable rows">
+    <style data-selector=".table-tree .table-tree-row-exandable.table-tree-row-lv-1 > td:first-child">For the level 1 rows</style>
+    <style data-selector=".table-tree .table-tree-row-exandable.table-tree-row-lv-2 > td:first-child">For the level 2 rows</style>
+    <style data-selector=".table-tree .table-tree-row-exandable.table-tree-row-lv-3 > td:first-child">For the level 3 rows</style>
+    <style data-selector=".table-tree .table-tree-row-exandable.table-tree-row-lv-4 > td:first-child">For the level 4 rows</style>
+    <style data-selector=".table-tree .table-tree-row-exandable.table-tree-row-lv-5 > td:first-child">For the level 5 rows</style>
+    <style data-selector=".table-tree .table-tree-row-exandable.table-tree-row-lv-6 > td:first-child">For the level 6 rows</style>
+  </pre>
+
+  <pre data-title="For non-exandable rows">
+    <style data-selector=".table-tree .table-tree-row-lv-1:not(.table-tree-row-exandable) > td:first-child">For the level 1 rows</style>
+    <style data-selector=".table-tree .table-tree-row-lv-2:not(.table-tree-row-exandable) > td:first-child">For the level 2 rows</style>
+    <style data-selector=".table-tree .table-tree-row-lv-3:not(.table-tree-row-exandable) > td:first-child">For the level 3 rows</style>
+    <style data-selector=".table-tree .table-tree-row-lv-4:not(.table-tree-row-exandable) > td:first-child">For the level 4 rows</style>
+    <style data-selector=".table-tree .table-tree-row-lv-5:not(.table-tree-row-exandable) > td:first-child">For the level 5 rows</style>
+    <style data-selector=".table-tree .table-tree-row-lv-6:not(.table-tree-row-exandable) > td:first-child">For the level 6 rows</style>
+  </pre>
+
+  <h5>Expand buttons</h5>
+  <pre data-title="For expand buttons">
+    <style data-selector=".table-tree .table-row-expand-btn"></style>
+    <style data-selector=".table-tree .btn-table-row-action"></style>
+  </pre>
+
+  <pre data-title="For caret icons">
+    <style data-selector=".table-tree .btn-table-row-action .table-row-expand-icon"></style>
+    <style data-selector=".table-tree .table-tree-row-expanded .btn-table-row-action .table-row-expand-icon">Expanded</style>
+  </pre>
+
+  <h5>Text after an expand button</h5>
+  <p>
+    For text after an expand button, apply the following style.
+  </p>
+  <pre>
+    <style data-selector=".table-tree .table-row-expand-btn + span"></style>
+  </pre>
+</section>
+
+<section>
+  <p class="help-block">
+    Note: The following example does not display the file icons. Depending on the production requirements, file icons are optional.
+  </p>
+
+  <table class="table table-bordered table-hover table-tree">
+    <thead>
+      <tr>
+        <th>Autorun Entry</th>
+        <th>Description</th>
+        <th>File Path</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="table-tree-row-exandable table-tree-row-lv-1 table-tree-row-expanded" data-level="1">
+        <td colspan="3">
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <span>C:\ProgramData\Microsoft\Windows\Start Menu\Programs</span>
+        </td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-2 table-tree-row-expanded" data-level="2">
+        <td>
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <span>Microsoft System Center</span>
+        </td>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-3 table-tree-row-expanded" data-level="3">
+        <td>
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <span>Configuration Manager</span>
+        </td>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr class="table-tree-row-lv-4" data-level="4">
+        <td>
+          <span>Software Center.lnk</span>
+        </td>
+        </td>
+        <td>Software Center</td>
+        <td></td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-2 table-tree-row-expanded" data-level="2">
+        <td>
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <span>Zoom</span>
+        </td>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr class="table-tree-row-lv-3" data-level="3">
+        <td>
+          <span>Zoom.lnk</span>
+        </td>
+        </td>
+        <td>Zoom Meetings</td>
+        <td>C:\Program Files (x86)\Zoom\bin\Zoom.exe</td>
+      </tr>
+
+      <tr class="table-tree-row-lv-2" data-level="2">
+        <td>
+          <span>Acrobat Reader DC.lnk</span>
+        </td>
+        </td>
+        <td>Acrobat Reader DC</td>
+        <td>C:\Programs Files\Adobe\Acrobat Reader DC\Reader\AcrobarRd32.EXE</td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-1" data-level="1">
+        <td colspan="3">
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <span>C:\ProgramData\Microsoft\Windows\Start Menu\Programs</span>
+        </td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-2" data-level="2">
+        <td>
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <span>Microsoft System Center</span>
+        </td>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-3" data-level="3">
+        <td>
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <span>Configuration Manager</span>
+        </td>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr class="table-tree-row-lv-4" data-level="4">
+        <td>
+          <span>Software Center.lnk</span>
+        </td>
+        </td>
+        <td>Software Center</td>
+        <td></td>
+      </tr>
+
+      <tr class="table-tree-row-exandable table-tree-row-lv-2" data-level="2">
+        <td>
+          <button class="btn-table-row-action table-row-expand-btn">
+            <span class="tmicon tmicon-caret-right tmicon-hoverable table-row-expand-icon"></span>
+          </button>
+          <span>Zoom</span>
+        </td>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr class="table-tree-row-lv-3" data-level="3">
+        <td>
+          <span>Zoom.lnk</span>
+        </td>
+        </td>
+        <td>Zoom Meetings</td>
+        <td>C:\Program Files (x86)\Zoom\bin\Zoom.exe</td>
+      </tr>
+
+      <tr class="table-tree-row-lv-2" data-level="2">
+        <td>
+          <span>Acrobat Reader DC.lnk</span>
+        </td>
+        </td>
+        <td>Acrobat Reader DC</td>
+        <td>C:\Programs Files\Adobe\Acrobat Reader DC\Reader\AcrobarRd32.EXE</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

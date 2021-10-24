@@ -1,0 +1,504 @@
+<section class="css-reference">
+  <h5>Modal wrapper</h5>
+  <p>Use <code data-tag="div"></code> to create a modal wrapper class. For example, <code>.modal</code> is a modal wrapper class used in Bootstrap.</p>
+  <pre>
+    <style data-selector=".modal"></style>
+  </pre>
+  <pre data-title="Common fade class">
+    <style data-selector=".fade"></style>
+  </pre>
+  <pre data-title="Common fade in class">
+    <style data-selector=".fade.in"></style>
+  </pre>
+  </pre>
+  <pre data-title="Modal fade">
+    <style data-selector=".modal.fade"></style>
+  </pre>
+  <pre data-title=":before">
+    <style data-selector=".modal:before">Let modal dialog position in the middle of the screen</style>
+  </pre>
+
+  <h5>Modal backdrop</h5>
+  <pre>
+    <style data-selector=".modal-backdrop"></style>
+  </pre>
+  <pre data-title="Modal backdrop in">
+    <style data-selector=".modal-backdrop.in"></style>
+  </pre>
+  <pre data-title="Modal backdrop fade">
+    <style data-selector=".modal-backdrop.fade"></style>
+  </pre>
+
+  <h5>Modal dialog</h5>
+  <p>Use <code data-tag="div"></code> to create a modal dialog class. For example, <code>.modal-dialog</code> is a modal dialog class used in Bootstrap.</p>
+  <pre>
+    <style data-selector=".modal-dialog"></style>
+  </pre>
+  <pre data-title="The modal dialog of the medium and large size">
+    <style data-selector=".modal-dialog.modal-lg">Let modal max height always 80% of the screen.</style>
+  </pre>
+
+  <h5>Modal width</h5>
+  <p>Extend the modal dialog class to define the modal width.</p>
+  <pre data-title="Extra Small">
+    <style data-selector=".modal-xs"></style>
+  </pre>
+  <pre data-title="Small">
+    <style data-selector=".modal-sm"></style>
+  </pre>
+  <pre data-title="Medium">
+    <style data-selector=".modal-md"></style>
+  </pre>
+  <pre data-title="Large">
+    <style data-selector=".modal-lg"></style>
+  </pre>
+
+  <h5>Modal container</h5>
+  <p>Wrap the modal header, body, and footer with a modal container. <code>.modal-content</code> is a modal container used in Bootstrap.</p>
+  <pre>
+    <style data-selector=".modal-content"></style>
+  </pre>
+
+  <h5>Modal header</h5>
+  <p>Use <code data-tag="div"></code> to create a modal header class. For example, <code>.modal-header</code> is a modal header used in Bootstrap.</p>
+  <pre>
+    <style data-selector=".modal-header"></style>
+  </pre>
+  <pre data-title="A modal without header">
+    <style data-selector=".modal-header.no-header"></style>
+  </pre>
+  <pre data-title="Title text class within header">
+    <style data-selector=".modal-title"></style>
+  </pre>
+
+  <h5>Close button class</h5>
+  <pre>
+    <style data-selector=".modal-header button"></style>
+  </pre>
+  <pre data-title=":focus">
+    <style data-selector=".modal-header button:focus"></style>
+  </pre>
+
+  <h5>Icon class</h5>
+  <p>The icon class should only be used on elements that do not contain any text or child elements. We recommend wrapping any <code data-tag="span"></code> or <code data-tag="i"></code> element.</p>
+  <pre>
+    <style data-selector=".tmicon-visible-low"></style>
+  </pre>
+  <pre data-title=":hover">
+    <style data-selector=".tmicon-visible-low.tmicon-hoverable:hover"></style>
+  </pre>
+
+  <h5>Modal body</h5>
+  <p>Use <code data-tag="div"></code> to create a modal body class. For example, <code>.modal-body</code> is a modal body used in Bootstrap.</p>
+  <pre>
+    <style data-selector=".modal-body"></style>
+  </pre>
+  <pre data-title="The modal body of the extra small size">
+    <style data-selector=".modal-body.body-xs"></style>
+  </pre>
+  <pre data-title="The modal body of the small size">
+    <style data-selector=".modal-body.body-sm"></style>
+  </pre>
+  <pre data-title="The modal body of the medium and large size">
+    <style data-selector=".modal-lg .modal-body"></style>
+  </pre>
+  <h5>Message dialog container</h5>
+  <pre>
+    <style data-selector=".modal-body .message-dialog"></style>
+  </pre>
+  <h5>Message dialog wrapper</h5>
+  <pre>
+    <style data-selector=".modal-body .message-dialog .message-wrapper"></style>
+  </pre>
+  <pre data-title=":before">
+    <style data-selector=".modal-body .message-dialog .message-wrapper:before"></style>
+  </pre>
+  <pre data-title="Primary message">
+    <style data-selector=".modal-body .message-dialog .message-wrapper .primary-msg"></style>
+  </pre>
+
+  <h5>Modal footer</h5>
+  <p>Use <code data-tag="div"></code> to create a modal footer class. For example, <code>.modal-footer</code> is a modal footer used in Bootstrap.</p>
+  <pre>
+    <style data-selector=".modal-footer"></style>
+  </pre>
+  <pre data-title="More than one buttons in a row in footer">
+    <style data-selector=".modal-footer .btn + .btn"></style>
+  </pre>
+</section>
+
+<section class="modal-example">
+  <p>Modal dialogs are used to get a response from a user before other features can be assessed from the main page. Use title case for the titles.</p>
+  <p>There are four common modal sizes. You may also adjust the size as required. <span class="placeholder" data-type="link" data-href="archives/modal-icons.zip">Download icons</span></p>
+  <div class="lists-unordered">
+    <ul>
+      <li><span>Extra small</span>:W400 x H240 px (minimum height)</li>
+      <li><span>Small</span>:W544 x H304 px (minimum height)</li>
+      <li><span>Medium</span>:W688 x H304 px (minimum height)</li>
+      <li><span>Large</span>:W928 x H304 px (minimum height)</li>
+    </ul>
+  </div>
+  <div class="modal-example-wrapper">
+    <div>
+      <h5>Input dialog</h5>
+      <div class="modal xs-example" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xs" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="tmicon tmicon-close tmicon-visible-low tmicon-hoverable"></span></button>
+              <h3 class="modal-title">Modal Title</h3>
+            </div>
+            <div class="modal-body body-xs">
+              <form action="javascript:void(0)">
+                <div class="form-group">
+                  <label class="control-label" for="modalInput1">Text input:</label>
+                  <input type="text" class="form-control" id="modalInput1">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save</button><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </div>
+  </div>
+  <div class="modal-example-wrapper msg-dialog-example">
+    <h5>Message dialog</h5>
+    <div>
+      <h6>With title message</h6>
+      <div class="modal xs-example" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xs" role="document">
+          <div class="modal-content">
+            <div class="modal-header no-header">
+              <button type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="tmicon tmicon-close tmicon-visible-low tmicon-hoverable"></span></button>
+            </div>
+            <div class="modal-body body-xs">
+              <div class="message-dialog">
+                <div class="message-wrapper success-message">
+                  <div class="primary-msg">Imported successfully!</div>
+                  <div class="descriptive-msg">4 duplicate records are found and merged.</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </div>
+    <div>
+      <h6>Without title message</h6>
+      <div class="modal xs-example" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xs" role="document">
+          <div class="modal-content">
+            <div class="modal-header no-header">
+              <button type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="tmicon tmicon-close tmicon-visible-low tmicon-hoverable"></span></button>
+            </div>
+            <div class="modal-body body-xs">
+              <div class="message-dialog">
+                <div class="message-wrapper info-message">
+                  <div class="descriptive-msg">Navigating away from the screen without saving discards all changes. Do you want to continue?</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Yes</button><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </div>
+  </div>
+  <div class="example">
+    <div>
+      <button class="btn btn-border" id="demo-xs-button" data-toggle="modal" data-target="#modal-xs">Extra Small Modal</button><button class="btn btn-border" id="demo-sm-button" data-toggle="modal" data-target="#modal-sm">Small Modal</button><button class="btn btn-border" id="demo-md-button" data-toggle="modal" data-target="#modal-md">Medium Modal</button><button class="btn btn-border" id="demo-lg-button" data-toggle="modal" data-target="#modal-lg">Large Modal</button>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="modal fade" data-template="modal-xs" tabindex="-1" role="dialog" aria-labelledby="xsModalLabel">
+      <div class="modal-dialog modal-xs" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="tmicon tmicon-close tmicon-visible-low tmicon-hoverable"></span></button>
+            <h3 class="modal-title" id="xsModalLabel">Modal Title</h3>
+          </div>
+          <div class="modal-body body-xs">
+            <form action="javascript:void(0)">
+              <div class="form-group">
+                <label class="control-label" for="modalInput2">Text input:</label>
+                <input type="text" class="form-control" id="modalInput2">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save</button><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="modal fade" data-template="modal-sm" tabindex="-1" role="dialog" aria-labelledby="smModalLabel">
+<div class="modal-dialog modal-sm" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="tmicon tmicon-close tmicon-visible-low tmicon-hoverable"></span></button>
+      <h3 class="modal-title">Modal Title</h3>
+    </div>
+    <div class="modal-body body-sm">
+      <form class="form-horizontal" action="javascript:void(0)">
+        <div class="form-group">
+          <label class="control-label" for="modalInput3">Title:</label>
+          <div class="control-wrapper">
+            <input type="text" class="form-control" id="modalInput3" value="Security Risk Detection Over Time">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Threat type:</label>
+          <div class="control-wrapper">
+            <div class="form-check">
+              <input type="checkbox" name="optionscheckboxs" id="modalcheckboxs">
+              <label for="modalcheckboxs">Virus/Malware</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="optionscheckboxs" id="modalcheckboxs1">
+              <label for="modalcheckboxs1">Spyware/Adware</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="optionscheckboxs" id="modalcheckboxs2" checked >
+              <label for="modalcheckboxs2">Web Reputation</label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary">Save</button><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" data-template="modal-md" tabindex="-1" role="dialog" aria-labelledby="mdModalLabel">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="tmicon tmicon-close tmicon-visible-low tmicon-hoverable"></span></button>
+        <h3 class="modal-title">Modal Title</h3>
+      </div>
+      <div class="modal-body mCustomScrollbar mCustomScrollbar-dragger-hover">
+        <form class="form-horizontal" action="javascript:void(0)">
+          <div class="form-group">
+            <label class="control-label" for="modalInput4">Title:</label>
+            <div class="control-wrapper">
+              <input type="text" class="form-control" id="modalInput4" value="Security Risk Detection Over Time">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label">Threat type:</label>
+            <div class="control-wrapper">
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs">
+                <label for="modalmdcheckboxs">Virus/Malware</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs1">
+                <label for="modalmdcheckboxs1">Spyware/Adware</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs2" checked>
+                <label for="modalmdcheckboxs2">Web Reputation</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs3" checked>
+                <label for="modalmdcheckboxs3">Predictive Machine Learning</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs4" checked>
+                <label for="modalmdcheckboxs4">Behavior Monitoring</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs5" checked>
+                <label for="modalmdcheckboxs5">Suspicious Connection</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs6" checked>
+                <label for="modalmdcheckboxs6">Suspicious Files Objects</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs7" checked>
+                <label for="modalmdcheckboxs7">Firewall</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs8" checked>
+                <label for="modalmdcheckboxs8">Device Control</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" id="modalmdcheckboxs9" checked>
+                <label for="modalmdcheckboxs9">Data Protection</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save</button><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" data-template="modal-lg" tabindex="-1" role="dialog" aria-labelledby="lgModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="tmicon tmicon-close tmicon-visible-low tmicon-hoverable"></span></button>
+        <h3 class="modal-title">Modal Title</h3>
+      </div>
+      <div class="modal-body mCustomScrollbar mCustomScrollbar-dragger-hover">
+        <form class="form-horizontal" action="javascript:void(0)">
+          <div class="form-group">
+            <label class="control-label label-required" for="input1">Field 1:</label>
+            <div class="control-wrapper">
+              <input type="text" class="form-control" id="input1">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label label-required" for="input2">Field 2:</label>
+            <div class="control-wrapper">
+              <input type="text" class="form-control" id="input2">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label label-required" for="input3">Field 3:</label>
+            <div class="control-wrapper">
+              <input type="text" class="form-control" id="input3">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label label-required" for="input4">Field 4:</label>
+            <div class="control-wrapper">
+              <input type="text" class="form-control" id="input4">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label label-required" for="input5">Field 5:</label>
+            <div class="control-wrapper">
+              <input type="text" class="form-control" id="input5">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label label-required" for="dropdown1">Dropdown 1:</label>
+            <div class="control-wrapper">
+              <select class="form-control" id="dropdown1">
+                <option disabled selected>Select an option</option>
+                <option>Menu item one</option>
+                <option>Menu item two</option>
+                <option>Menu item three</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label label-required" for="dropdown2">Dropdown 2:</label>
+            <div class="control-wrapper">
+              <select class="form-control" id="dropdown2">
+                <option disabled selected>Select an option</option>
+                <option>Menu item one</option>
+                <option>Menu item two</option>
+                <option>Menu item three</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="errorTextarea">Description 1:</label>
+            <div class="control-wrapper">
+              <textarea class="form-control textarea-normal textarea-resize" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="errorTextarea">Description 2:</label>
+            <div class="control-wrapper">
+              <textarea class="form-control textarea-normal textarea-resize" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label" for="errorTextarea">Description 3:</label>
+            <div class="control-wrapper">
+              <textarea class="form-control textarea-normal textarea-resize" rows="5"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label label-required checkbox-label">Checkboxes:</label>
+            <div class="control-wrapper">
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs">
+                <label>Item 1</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" checked="checked">
+                <label>Item 2</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs" checked="checked">
+                <label>Item 3</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs">
+                <label>Item 4</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" name="optionscheckboxs">
+                <label>Item 5</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label label-required checkbox-label">Radio buttons:</label>
+            <div class="control-wrapper">
+              <div class="form-check">
+                <input type="radio" name="optionsRadios">
+                <label>Option 1</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="optionsRadios">
+                <label>Option 2</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="optionsRadios"checked="checked">
+                <label>Option 3</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="optionsRadios">
+                <label>Option 4</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="optionsRadios">
+                <label>Option 5</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save</button><button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

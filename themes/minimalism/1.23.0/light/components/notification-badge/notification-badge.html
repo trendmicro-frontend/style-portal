@@ -1,0 +1,258 @@
+<section class="css-reference">
+    <h5>Badge with icon container</h5>
+    <p>Wrap a badge and an icon within an element.</p>
+    <pre>
+        <style data-selector=".notification-badge-contianer"></style>
+    </pre>
+    <h5>Badge class</h5>
+    <p>For more information on badge styles, refer to <a href="#/styles/{{theme}}/{{version}}/1a9b33f7-1fc1-48d1-a1ae-2b1527ec8031">Badges</a>.</p>
+    <pre>
+        <style data-selector=".notification-badge-contianer .badge"></style>
+    </pre>
+    <h5>Popover wrapper</h5>
+    <pre>
+        <style data-selector=".notification-popup-wrapper"></style>
+    </pre>
+    <pre data-title="When popover is active">
+        <style data-selector=".open > .notification-popup-wrapper"></style>
+    </pre>
+    <pre data-title="Align popover to the right">
+        <style data-selector="header .nav > li.dropdown .notification-popup-wrapper"></style>
+    </pre>
+    <h5>Popover title</h5>
+    <pre>
+        <style data-selector=".notification-popup-wrapper .header"></style>
+    </pre>
+    <h5>Popover container</h5>
+    <pre>
+        <style data-selector=".notification-popup-wrapper .notification-container"></style>
+    </pre>
+    <pre data-title="No notification container">
+        <style data-selector=".notification-popup-wrapper.no-footer .notification-container">Align item in the middle of container</style>
+    </pre>
+    <h5>Popover container item</h5>
+    <pre>
+        <style data-selector=".notification-popup-wrapper .notification-container .item"></style>
+    </pre>
+    <pre data-title=":hover">
+        <style data-selector=".notification-popup-wrapper .notification-container .item:hover">Determine the cursor according to product requirements.</style>
+    </pre>
+    <pre>
+        <style data-selector=".notification-popup-wrapper .notification-container .item + .item">.item + .item</style>
+    </pre>
+    <pre data-title="Unread">
+        <style data-selector=".notification-popup-wrapper .notification-container .item.unread::before">::before</style>
+    </pre>
+    <pre data-title="Announcement">
+        <style data-selector=".notification-popup-wrapper .notification-container .item.item-announce"></style>
+    </pre>
+    <pre data-title="News">
+        <style data-selector=".notification-popup-wrapper .notification-container .item.item-news"></style>
+    </pre>
+    <pre data-title="Hotfix">
+        <style data-selector=".notification-popup-wrapper .notification-container .item.item-hotfix"></style>
+    </pre>
+    <h5>Popover container item title</h5>
+    <pre>
+        <style data-selector=".notification-popup-wrapper .notification-container .item .item-title"></style>
+    </pre>
+    <h5>Popover container  with no notification to display</h5>
+    <pre data-title="No notification item container">
+        <style data-selector=".notification-popup-wrapper .notification-container .no-notification-container"></style>
+    </pre>
+    <pre data-title="Image">
+        <style data-selector=".notification-popup-wrapper .notification-container .no-notification-container .img"></style>
+    </pre>
+    <pre data-title="Message">
+        <style data-selector=".notification-popup-wrapper .notification-container .no-notification-container .message"></style>
+    </pre>
+    <h5>Popover footer</h5>
+    <pre>
+        <style data-selector=".notification-popup-wrapper .footer"></style>
+    </pre>
+</section>
+  
+<section class="notification-badge-example">
+    <p>Use a notification badge to display reminders and alert information, and notify users of unread messages.</p>
+    <p>A notification badge consists of the following elements:</p>
+    <div class="lists-unordered">
+        <ul>
+            <li>Numeric badge: Displays the number of new notifications. Click the numeric badge to display or hide the popover window.</li>
+            <li>Popover window: Displays new notifications for a user.</li>
+        </ul>
+    </div>
+    <p>A notification badge:</p>
+    <div class="lists-unordered">
+        <ul>
+            <li>Should be located on the top-right of a banner.</li>
+            <li>Display an updated counter when a new notification becomes available.</li>
+            <li>Resets the counter and hides the numeric badge after displaying the popover window.</li>
+            <li>Includes a red dot in front of an unread notification.</li>
+            <li>Displays an empty popover window to indicate no new notification is available.</li>
+            <li>Displays a loader icon to indicate that data retrieval is in progress.</li>
+        </ul>
+    </div>
+    <div class="example">
+        <div class="badge-with-icon-example">
+            <span class="notification-badge-contianer">
+                <span class="tmicon tmicon-alert"></span>
+                <span class="badge badge-red">5</span>
+            </span>
+        </div>
+        <div class="badge-with-icon-example">
+            <span class="notification-badge-contianer">
+                <span class="tmicon tmicon-alert"></span>
+                <span class="badge badge-red">99</span>
+            </span>
+        </div>
+        <div class="badge-with-icon-example">
+            <span class="notification-badge-contianer">
+                <span class="tmicon tmicon-alert"></span>
+                <span class="badge badge-red">99+</span>
+            </span>
+        </div>
+    </div>
+    <div class="navbar-example">
+        <header class="site-header header-with-navbar">
+            <a href="javascript:;" class="banner">
+                <h1 class="site-title">Product Name</h1>
+            </a>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown open">
+                    <a href="javascript:;" class="dropdown-toggle">
+                        <span class="notification-badge-contianer">
+                            <span class="tmicon tmicon-alert"></span>
+                            <span class="badge badge-red">1</span>
+                        </span>
+                    </a>
+                    <div class="notification-popup-wrapper">
+                        <div class="header">Notifications</div>
+                        <div class="notification-container mCustomScrollbar mCustomScrollbar-dragger-hover">
+                            <div class="item item-announce unread">Apex Central as a Service to be offline for 1 hour tomorrow (2019-04-16)</div>
+                            <div class="item item-news">
+                                <div class="item-title">API Automation Center</div>
+                                Present details of Apex Central API endpoints, including parameter descriptions, request and response schemas, and language-specific SDK.
+                            </div>
+                            <div class="item item-hotfix">
+                                <div class="item-title">Hotfix</div>
+                                Present details of Apex Central API endpoints, It has roots in a piece of classical.
+                                <div><a>See details</a></div>
+                            </div>
+                        </div>
+                        <div class="footer">Last updated: 2019-04-15 00:00:00</div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="tmicon tmicon-caret-down"></span>
+                        <span class="tmicon tmicon-user"></span>Admin_TW
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:;">Change Password</a></li>
+                        <li><a href="javascript:;">Log off</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+            <li><a class="navbar-icon" href="javascript:;"><span class="tmicon tmicon-pin-star"></span></a></li>
+            <li class="dropdown active">
+                <a href="javascript:;" class="dropdown-toggle" datda-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu 1</a>
+                <ul class="dropdown-menu open">
+                <li class="active"><a href="javascript:;">Menu item one</a></li>
+                <li><a href="javascript:;">Menu item two</a></li>
+                <li><a href="javascript:;">Menu item three</a></li>
+                <li class="dropdown-submenu">
+                    <a href="javascript:;"><span class="tmicon tmicon-caret-right"></span>Menu item four</a>
+                    <ul class="dropdown-menu">
+                    <li><a href="javascript:;">Second level item one</a></li>
+                    <li><a href="javascript:;">Second level item two</a></li>
+                    <li><a href="javascript:;">Second level item three</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle" data-tofggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu 2</a>
+                <ul class="dropdown-menu open">
+                <li><a href="javascript:;">Menu item one</a></li>
+                <li><a href="javascript:;">Menu item two</a></li>
+                <li><a href="javascript:;">Menu item three</a></li>
+                <li class="dropdown-submenu">
+                    <a href="javascript:;"><span class="tmicon tmicon-caret-right"></span>Menu item four</a>
+                    <ul class="dropdown-menu">
+                    <li><a href="javascript:;">Second level item one</a></li>
+                    <li><a href="javascript:;">Second level item two</a></li>
+                    <li><a href="javascript:;">Second level item three</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle" data-tofggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu 3</a>
+                <ul class="dropdown-menu open">
+                <li><a href="javascript:;">Menu item one</a></li>
+                <li><a href="javascript:;">Menu item two</a></li>
+                <li><a href="javascript:;">Menu item three</a></li>
+                <li class="dropdown-submenu">
+                    <a href="javascript:;"><span class="tmicon tmicon-caret-right"></span>Menu item four</a>
+                    <ul class="dropdown-menu">
+                    <li><a href="javascript:;">Second level item one</a></li>
+                    <li><a href="javascript:;">Second level item two</a></li>
+                    <li><a href="javascript:;">Second level item three</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle" data-tfoggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu 4</a>
+                <ul class="dropdown-menu open">
+                <li><a href="javascript:;">Menu item one</a></li>
+                <li><a href="javascript:;">Menu item two</a></li>
+                <li><a href="javascript:;">Menu item three</a></li>
+                <li class="dropdown-submenu">
+                    <a href="javascript:;"><span class="tmicon tmicon-caret-right"></span>Menu item four</a>
+                    <ul class="dropdown-menu">
+                    <li><a href="javascript:;">Second level item one</a></li>
+                    <li><a href="javascript:;">Second level item two</a></li>
+                    <li><a href="javascript:;">Second level item three</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="status-example">
+        <div class="no-notification-example">
+            <div class="badge-with-icon-example">
+                <span class="notification-badge-contianer">
+                    <span class="tmicon tmicon-alert"></span>
+                </span>
+            </div>
+            <div class="notification-popup-wrapper no-footer">
+                <div class="header">Notifications</div>
+                <div class="notification-container loader-overlay">
+                    <span class="loader"></span>
+                </div>
+            </div>
+        </div>
+        <div class="no-notification-example">
+            <div class="badge-with-icon-example">
+                <span class="notification-badge-contianer">
+                    <span class="tmicon tmicon-alert"></span>
+                </span>
+            </div>
+            <div class="notification-popup-wrapper no-footer">
+                <div class="header">Notifications</div>
+                <div class="notification-container">
+                    <div class="no-notification-container">
+                        <div class="img"></div>
+                        <div class="message">No notification to display</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

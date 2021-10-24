@@ -1,0 +1,50 @@
+<section class="css-reference">
+  <h5>Map chart</h5>
+  <pre>
+    <style data-selector=".style-portal .highcharts .mapcharts .map-bubble .map">The background color of the map chart</style>
+  </pre>
+  <h5>Bubble</h5>
+  <pre>
+    <style data-selector=".style-portal .highcharts .mapcharts .map-bubble .bubble"></style>
+  </pre>
+  <pre data-title=":hover">
+    <style data-selector=".style-portal .highcharts .mapcharts .map-bubble .bubble:hover"></style>
+  </pre>
+  <h5>Buttons with only an icon</h5>
+  <p>About the button group style, please refer to <a href="#/styles/{{theme}}/{{version}}/e5bd7778-d707-420b-ac64-4a55da161b83">Buttons</a>.</p>
+  <pre>
+    <style data-selector=".style-portal .highcharts .mapcharts .map-bubble .button-group .btn"></style>
+  </pre>
+  <h5>Tooltip Wrapper</h5>
+  <pre>
+     <style data-selector=".highcharts-tooltip > span > table"></style>
+     <style data-selector=".style-portal .highcharts .map-bubble-tooltips"></style>
+  </pre>
+  <pre>
+     <style data-selector=".style-portal .highcharts .tooltip">For style information on tooltip shadow, apply the default style if using the highcharts library; otherwise, use the following style</style>
+  </pre>
+  <h5>Tooltip arrow class</h5>
+  <p>If the highcharts library is used, apply the default style for the tooltip arrow. Otherwise, refer to <a href="#/styles/{{theme}}/{{version}}/0cc7f2c3-4690-4f66-89b9-33ab469e8b5f">Tooltips</a>.</p>
+  <h5>Tooltip Title</h5>
+  <pre>
+     <style data-selector=".highcharts-tooltip > span > table > thead > tr > td"></style>
+  </pre>
+  <h5>Tooltip Series Name</h5>
+  <pre>
+     <style data-selector=".highcharts-tooltip > span > table > tbody > tr > td:first-child"></style>
+  </pre>
+  <h5>Tooltip Series Value</h5>
+  <pre>
+     <style data-selector=".highcharts-tooltip > span > table > tbody > tr > td:last-child"></style>
+  </pre>
+</section>
+
+<section class="map-bubble-chart-example">
+  <div class="map-chart-with-button-group">
+    <div id="map-bubble-chart-container" class="highcharts-container map-bubble-chart-container"></div>
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-border btn-icon-only btn-zoom-in" aria-label="zoomIn"><span class="tmicon tmicon-add"></span></button>
+      <button type="button" class="btn btn-border btn-icon-only btn-zoom-out" aria-label="zoomOut"><span class="tmicon tmicon-minus"></span></button>
+    </div>
+  </div>
+</section>
